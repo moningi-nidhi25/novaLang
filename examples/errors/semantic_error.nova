@@ -1,0 +1,4 @@
+// Grammatically fine, but the program does not make sense.
+let count = 5;
+count = "five";
+print(cuont);

@@ -1,0 +1,19 @@
+// while, for, break and continue.
+let i = 0;
+while (i < 5) {
+    print(i);
+    i = i + 1;
+}
+
+let sum = 0;
+for (let k = 1; k <= 10; k = k + 1) {
+    sum = sum + k;
+}
+print(sum);
+
+// continue skips even numbers, break stops at 7
+for (let n = 0; n < 20; n = n + 1) {
+    if (n % 2 == 0) { continue; }
+    if (n > 7) { break; }
+    print(n);
+}

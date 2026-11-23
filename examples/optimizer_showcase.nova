@@ -1,0 +1,13 @@
+// Everything here is work the optimizer can remove before the program runs.
+let seconds_per_day = 60 * 60 * 24;     // folded to 86400
+let unused = 7 * 6;                      // never read: removed
+let width = 10;
+let area = width * width + 0;            // width is known: folded; "+ 0" is dropped
+
+if (area > 50) {                         // the condition is always true
+    print(area);
+} else {
+    print("small");                      // can never run: removed
+}
+
+print(seconds_per_day);

@@ -1,0 +1,762 @@
+{
+ "ok": true,
+ "failed_stage": null,
+ "source": "let x = 2 * 3 + 4;\nlet unused = 5;\nprint(x);\n",
+ "stages": [
+  {
+   "id": "source",
+   "name": "Source Code",
+   "status": "ok",
+   "summary": "4 lines, 45 characters",
+   "data": {
+    "text": "let x = 2 * 3 + 4;\nlet unused = 5;\nprint(x);\n",
+    "lines": 4
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tokens",
+   "name": "Tokens",
+   "status": "ok",
+   "summary": "20 tokens",
+   "data": [
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 1,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "x",
+     "value": null,
+     "line": 1,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 1,
+     "column": 7
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "2",
+     "value": 2,
+     "line": 1,
+     "column": 9
+    },
+    {
+     "type": "STAR",
+     "lexeme": "*",
+     "value": null,
+     "line": 1,
+     "column": 11
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "3",
+     "value": 3,
+     "line": 1,
+     "column": 13
+    },
+    {
+     "type": "PLUS",
+     "lexeme": "+",
+     "value": null,
+     "line": 1,
+     "column": 15
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "4",
+     "value": 4,
+     "line": 1,
+     "column": 17
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 1,
+     "column": 18
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 2,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "unused",
+     "value": null,
+     "line": 2,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 2,
+     "column": 12
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "5",
+     "value": 5,
+     "line": 2,
+     "column": 14
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 2,
+     "column": 15
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 3,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 3,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "x",
+     "value": null,
+     "line": 3,
+     "column": 7
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 3,
+     "column": 8
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 3,
+     "column": 9
+    },
+    {
+     "type": "EOF",
+     "lexeme": "",
+     "value": null,
+     "line": 4,
+     "column": 1
+    }
+   ],
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "ast",
+   "name": "Abstract Syntax Tree",
+   "status": "ok",
+   "summary": "3 top-level statements",
+   "data": {
+    "type": "Program",
+    "label": "",
+    "line": 1,
+    "column": 1,
+    "body": [
+     {
+      "type": "VariableDeclaration",
+      "label": "x",
+      "line": 1,
+      "column": 1,
+      "name": "x",
+      "initializer": {
+       "type": "BinaryExpression",
+       "label": "+",
+       "line": 1,
+       "column": 15,
+       "inferred_type": "int",
+       "operator": "+",
+       "left": {
+        "type": "BinaryExpression",
+        "label": "*",
+        "line": 1,
+        "column": 11,
+        "inferred_type": "int",
+        "operator": "*",
+        "left": {
+         "type": "Literal",
+         "label": "2",
+         "line": 1,
+         "column": 9,
+         "inferred_type": "int",
+         "value": 2,
+         "literal_type": "int"
+        },
+        "right": {
+         "type": "Literal",
+         "label": "3",
+         "line": 1,
+         "column": 13,
+         "inferred_type": "int",
+         "value": 3,
+         "literal_type": "int"
+        }
+       },
+       "right": {
+        "type": "Literal",
+        "label": "4",
+        "line": 1,
+        "column": 17,
+        "inferred_type": "int",
+        "value": 4,
+        "literal_type": "int"
+       }
+      }
+     },
+     {
+      "type": "VariableDeclaration",
+      "label": "unused",
+      "line": 2,
+      "column": 1,
+      "name": "unused",
+      "initializer": {
+       "type": "Literal",
+       "label": "5",
+       "line": 2,
+       "column": 14,
+       "inferred_type": "int",
+       "value": 5,
+       "literal_type": "int"
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 3,
+      "column": 1,
+      "expression": {
+       "type": "Identifier",
+       "label": "x",
+       "line": 3,
+       "column": 7,
+       "inferred_type": "int",
+       "name": "x"
+      }
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "semantic",
+   "name": "Semantic Analysis",
+   "status": "ok",
+   "summary": "0 errors, 0 warnings",
+   "data": {
+    "info": [
+     {
+      "line": 1,
+      "column": 1,
+      "message": "Variable 'x' declared successfully (type: int)."
+     },
+     {
+      "line": 2,
+      "column": 1,
+      "message": "Variable 'unused' declared successfully (type: int)."
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "symbol_table",
+   "name": "Symbol Table",
+   "status": "ok",
+   "summary": "scope tree built",
+   "data": {
+    "name": "global",
+    "kind": "global",
+    "level": 0,
+    "symbols": [
+     {
+      "name": "x",
+      "kind": "variable",
+      "type": "int",
+      "line": 1,
+      "column": 1,
+      "scope": "global"
+     },
+     {
+      "name": "unused",
+      "kind": "variable",
+      "type": "int",
+      "line": 2,
+      "column": 1,
+      "scope": "global"
+     }
+    ],
+    "children": []
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tac",
+   "name": "Three Address Code",
+   "status": "ok",
+   "summary": "5 instructions in 1 function",
+   "data": {
+    "functions": [
+     {
+      "name": "main",
+      "params": [],
+      "kind": "main",
+      "instructions": [
+       {
+        "op": "*",
+        "arg1": "2",
+        "arg2": "3",
+        "result": "t1",
+        "text": "t1 = 2 * 3",
+        "line": 1,
+        "column": 11,
+        "index": 0
+       },
+       {
+        "op": "+",
+        "arg1": "t1",
+        "arg2": "4",
+        "result": "t2",
+        "text": "t2 = t1 + 4",
+        "line": 1,
+        "column": 15,
+        "index": 1
+       },
+       {
+        "op": "copy",
+        "arg1": "t2",
+        "arg2": null,
+        "result": "x",
+        "text": "x = t2",
+        "line": 1,
+        "column": 1,
+        "index": 2
+       },
+       {
+        "op": "copy",
+        "arg1": "5",
+        "arg2": null,
+        "result": "unused",
+        "text": "unused = 5",
+        "line": 2,
+        "column": 1,
+        "index": 3
+       },
+       {
+        "op": "print",
+        "arg1": "x",
+        "arg2": null,
+        "result": null,
+        "text": "print x",
+        "line": 3,
+        "column": 1,
+        "index": 4
+       }
+      ]
+     }
+    ],
+    "globals": [
+     "x",
+     "unused"
+    ],
+    "listing": "main:\n    t1 = 2 * 3\n    t2 = t1 + 4\n    x = t2\n    unused = 5\n    print x"
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "cfg",
+   "name": "Basic Blocks & CFG",
+   "status": "ok",
+   "summary": "1 basic block",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B1"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 4,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "*",
+          "arg1": "2",
+          "arg2": "3",
+          "result": "t1",
+          "text": "t1 = 2 * 3",
+          "line": 1,
+          "column": 11,
+          "index": 0
+         },
+         {
+          "op": "+",
+          "arg1": "t1",
+          "arg2": "4",
+          "result": "t2",
+          "text": "t2 = t1 + 4",
+          "line": 1,
+          "column": 15,
+          "index": 1
+         },
+         {
+          "op": "copy",
+          "arg1": "t2",
+          "arg2": null,
+          "result": "x",
+          "text": "x = t2",
+          "line": 1,
+          "column": 1,
+          "index": 2
+         },
+         {
+          "op": "copy",
+          "arg1": "5",
+          "arg2": null,
+          "result": "unused",
+          "text": "unused = 5",
+          "line": 2,
+          "column": 1,
+          "index": 3
+         },
+         {
+          "op": "print",
+          "arg1": "x",
+          "arg2": null,
+          "result": null,
+          "text": "print x",
+          "line": 3,
+          "column": 1,
+          "index": 4
+         }
+        ],
+        "successors": [],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": true
+       }
+      ],
+      "edges": []
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_tac",
+   "name": "Optimized TAC",
+   "status": "ok",
+   "summary": "5 -> 3 instructions, 7 changes",
+   "data": {
+    "original": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "*",
+         "arg1": "2",
+         "arg2": "3",
+         "result": "t1",
+         "text": "t1 = 2 * 3",
+         "line": 1,
+         "column": 11,
+         "index": 0
+        },
+        {
+         "op": "+",
+         "arg1": "t1",
+         "arg2": "4",
+         "result": "t2",
+         "text": "t2 = t1 + 4",
+         "line": 1,
+         "column": 15,
+         "index": 1
+        },
+        {
+         "op": "copy",
+         "arg1": "t2",
+         "arg2": null,
+         "result": "x",
+         "text": "x = t2",
+         "line": 1,
+         "column": 1,
+         "index": 2
+        },
+        {
+         "op": "copy",
+         "arg1": "5",
+         "arg2": null,
+         "result": "unused",
+         "text": "unused = 5",
+         "line": 2,
+         "column": 1,
+         "index": 3
+        },
+        {
+         "op": "print",
+         "arg1": "x",
+         "arg2": null,
+         "result": null,
+         "text": "print x",
+         "line": 3,
+         "column": 1,
+         "index": 4
+        }
+       ]
+      }
+     ],
+     "globals": [
+      "x",
+      "unused"
+     ],
+     "listing": "main:\n    t1 = 2 * 3\n    t2 = t1 + 4\n    x = t2\n    unused = 5\n    print x"
+    },
+    "optimized": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "copy",
+         "arg1": "10",
+         "arg2": null,
+         "result": "x",
+         "text": "x = 10",
+         "line": 1,
+         "column": 1,
+         "index": 0
+        },
+        {
+         "op": "copy",
+         "arg1": "5",
+         "arg2": null,
+         "result": "unused",
+         "text": "unused = 5",
+         "line": 2,
+         "column": 1,
+         "index": 1
+        },
+        {
+         "op": "print",
+         "arg1": "10",
+         "arg2": null,
+         "result": null,
+         "text": "print 10",
+         "line": 3,
+         "column": 1,
+         "index": 2
+        }
+       ]
+      }
+     ],
+     "globals": [
+      "x",
+      "unused"
+     ],
+     "listing": "main:\n    x = 10\n    unused = 5\n    print 10"
+    },
+    "changes": [
+     {
+      "pass": "constant folding",
+      "function": "main",
+      "line": 1,
+      "before": "t1 = 2 * 3",
+      "after": "t1 = 6",
+      "description": "both operands are constants, so it is computed at compile time"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 1,
+      "before": "t2 = t1 + 4",
+      "after": "t2 = 6 + 4",
+      "description": "'t1' is always 6 at this point"
+     },
+     {
+      "pass": "constant folding",
+      "function": "main",
+      "line": 1,
+      "before": "t2 = 6 + 4",
+      "after": "t2 = 10",
+      "description": "both operands are constants, so it is computed at compile time"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 1,
+      "before": "x = t2",
+      "after": "x = 10",
+      "description": "'t2' is always 10 at this point"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 3,
+      "before": "print x",
+      "after": "print 10",
+      "description": "'x' is always 10 at this point"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 1,
+      "before": "t2 = 10",
+      "after": null,
+      "description": "'t2' is never read afterwards"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 1,
+      "before": "t1 = 6",
+      "after": null,
+      "description": "'t1' is never read afterwards"
+     }
+    ],
+    "stats": {
+     "constant folding": 2,
+     "constant propagation": 3,
+     "dead store removal": 2
+    },
+    "instruction_counts": {
+     "before": 5,
+     "after": 3
+    }
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_cfg",
+   "name": "Optimized CFG",
+   "status": "ok",
+   "summary": "1 basic block",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B1"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 2,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "copy",
+          "arg1": "10",
+          "arg2": null,
+          "result": "x",
+          "text": "x = 10",
+          "line": 1,
+          "column": 1,
+          "index": 0
+         },
+         {
+          "op": "copy",
+          "arg1": "5",
+          "arg2": null,
+          "result": "unused",
+          "text": "unused = 5",
+          "line": 2,
+          "column": 1,
+          "index": 1
+         },
+         {
+          "op": "print",
+          "arg1": "10",
+          "arg2": null,
+          "result": null,
+          "text": "print 10",
+          "line": 3,
+          "column": 1,
+          "index": 2
+         }
+        ],
+        "successors": [],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": true
+       }
+      ],
+      "edges": []
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "execution",
+   "name": "Execution",
+   "status": "ok",
+   "summary": "3 steps; optimized TAC gives identical output",
+   "data": {
+    "output": "10\n",
+    "steps": 3,
+    "variables": {
+     "x": "10",
+     "unused": "5"
+    },
+    "optimized_output": "10\n",
+    "verified": true
+   },
+   "errors": [],
+   "warnings": []
+  }
+ ],
+ "errors": [],
+ "warnings": []
+}

@@ -1,0 +1,607 @@
+{
+ "ok": true,
+ "failed_stage": null,
+ "source": "function factorial(n) {\n    if (n <= 1) {\n        return 1;\n    }\n\n    return n * factorial(n - 1);\n}\n\nlet result = factorial(5);\n\nprint(result);\n",
+ "stages": [
+  {
+   "id": "source",
+   "name": "Source Code",
+   "status": "ok",
+   "summary": "12 lines, 146 characters",
+   "data": {
+    "text": "function factorial(n) {\n    if (n <= 1) {\n        return 1;\n    }\n\n    return n * factorial(n - 1);\n}\n\nlet result = factorial(5);\n\nprint(result);\n",
+    "lines": 12
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tokens",
+   "name": "Tokens",
+   "status": "ok",
+   "summary": "42 tokens",
+   "data": [
+    {
+     "type": "FUNCTION",
+     "lexeme": "function",
+     "value": null,
+     "line": 1,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "factorial",
+     "value": null,
+     "line": 1,
+     "column": 10
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 1,
+     "column": 19
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 1,
+     "column": 20
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 1,
+     "column": 21
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 1,
+     "column": 23
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 2,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 2,
+     "column": 8
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 2,
+     "column": 9
+    },
+    {
+     "type": "LTE",
+     "lexeme": "<=",
+     "value": null,
+     "line": 2,
+     "column": 11
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 2,
+     "column": 14
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 2,
+     "column": 15
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 2,
+     "column": 17
+    },
+    {
+     "type": "RETURN",
+     "lexeme": "return",
+     "value": null,
+     "line": 3,
+     "column": 9
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 3,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 3,
+     "column": 17
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 4,
+     "column": 5
+    },
+    {
+     "type": "RETURN",
+     "lexeme": "return",
+     "value": null,
+     "line": 6,
+     "column": 5
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 6,
+     "column": 12
+    },
+    {
+     "type": "STAR",
+     "lexeme": "*",
+     "value": null,
+     "line": 6,
+     "column": 14
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "factorial",
+     "value": null,
+     "line": 6,
+     "column": 16
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 6,
+     "column": 25
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 6,
+     "column": 26
+    },
+    {
+     "type": "MINUS",
+     "lexeme": "-",
+     "value": null,
+     "line": 6,
+     "column": 28
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 6,
+     "column": 30
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 6,
+     "column": 31
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 6,
+     "column": 32
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 7,
+     "column": 1
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 9,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "result",
+     "value": null,
+     "line": 9,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 9,
+     "column": 12
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "factorial",
+     "value": null,
+     "line": 9,
+     "column": 14
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 9,
+     "column": 23
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "5",
+     "value": 5,
+     "line": 9,
+     "column": 24
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 9,
+     "column": 25
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 9,
+     "column": 26
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 11,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 11,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "result",
+     "value": null,
+     "line": 11,
+     "column": 7
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 11,
+     "column": 13
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 11,
+     "column": 14
+    },
+    {
+     "type": "EOF",
+     "lexeme": "",
+     "value": null,
+     "line": 12,
+     "column": 1
+    }
+   ],
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "ast",
+   "name": "Abstract Syntax Tree",
+   "status": "ok",
+   "summary": "3 top-level statements",
+   "data": {
+    "type": "Program",
+    "label": "",
+    "line": 1,
+    "column": 1,
+    "body": [
+     {
+      "type": "FunctionDeclaration",
+      "label": "factorial(n)",
+      "line": 1,
+      "column": 1,
+      "name": "factorial",
+      "params": [
+       "n"
+      ],
+      "body": {
+       "type": "Block",
+       "label": "",
+       "line": 1,
+       "column": 23,
+       "statements": [
+        {
+         "type": "IfStatement",
+         "label": "",
+         "line": 2,
+         "column": 5,
+         "condition": {
+          "type": "BinaryExpression",
+          "label": "<=",
+          "line": 2,
+          "column": 11,
+          "inferred_type": "bool",
+          "operator": "<=",
+          "left": {
+           "type": "Identifier",
+           "label": "n",
+           "line": 2,
+           "column": 9,
+           "inferred_type": "any",
+           "name": "n"
+          },
+          "right": {
+           "type": "Literal",
+           "label": "1",
+           "line": 2,
+           "column": 14,
+           "inferred_type": "int",
+           "value": 1,
+           "literal_type": "int"
+          }
+         },
+         "then_branch": {
+          "type": "Block",
+          "label": "",
+          "line": 2,
+          "column": 17,
+          "statements": [
+           {
+            "type": "ReturnStatement",
+            "label": "",
+            "line": 3,
+            "column": 9,
+            "value": {
+             "type": "Literal",
+             "label": "1",
+             "line": 3,
+             "column": 16,
+             "inferred_type": "int",
+             "value": 1,
+             "literal_type": "int"
+            }
+           }
+          ]
+         },
+         "else_branch": null
+        },
+        {
+         "type": "ReturnStatement",
+         "label": "",
+         "line": 6,
+         "column": 5,
+         "value": {
+          "type": "BinaryExpression",
+          "label": "*",
+          "line": 6,
+          "column": 14,
+          "inferred_type": "any",
+          "operator": "*",
+          "left": {
+           "type": "Identifier",
+           "label": "n",
+           "line": 6,
+           "column": 12,
+           "inferred_type": "any",
+           "name": "n"
+          },
+          "right": {
+           "type": "FunctionCall",
+           "label": "",
+           "line": 6,
+           "column": 16,
+           "inferred_type": "any",
+           "callee": {
+            "type": "Identifier",
+            "label": "factorial",
+            "line": 6,
+            "column": 16,
+            "inferred_type": "function",
+            "name": "factorial"
+           },
+           "arguments": [
+            {
+             "type": "BinaryExpression",
+             "label": "-",
+             "line": 6,
+             "column": 28,
+             "inferred_type": "any",
+             "operator": "-",
+             "left": {
+              "type": "Identifier",
+              "label": "n",
+              "line": 6,
+              "column": 26,
+              "inferred_type": "any",
+              "name": "n"
+             },
+             "right": {
+              "type": "Literal",
+              "label": "1",
+              "line": 6,
+              "column": 30,
+              "inferred_type": "int",
+              "value": 1,
+              "literal_type": "int"
+             }
+            }
+           ]
+          }
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "VariableDeclaration",
+      "label": "result",
+      "line": 9,
+      "column": 1,
+      "name": "result",
+      "initializer": {
+       "type": "FunctionCall",
+       "label": "",
+       "line": 9,
+       "column": 14,
+       "inferred_type": "any",
+       "callee": {
+        "type": "Identifier",
+        "label": "factorial",
+        "line": 9,
+        "column": 14,
+        "inferred_type": "function",
+        "name": "factorial"
+       },
+       "arguments": [
+        {
+         "type": "Literal",
+         "label": "5",
+         "line": 9,
+         "column": 24,
+         "inferred_type": "int",
+         "value": 5,
+         "literal_type": "int"
+        }
+       ]
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 11,
+      "column": 1,
+      "expression": {
+       "type": "Identifier",
+       "label": "result",
+       "line": 11,
+       "column": 7,
+       "inferred_type": "any",
+       "name": "result"
+      }
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "semantic",
+   "name": "Semantic Analysis",
+   "status": "ok",
+   "summary": "0 errors, 0 warnings",
+   "data": {
+    "info": [
+     {
+      "line": 1,
+      "column": 1,
+      "message": "Function 'factorial' declared with 1 parameter."
+     },
+     {
+      "line": 9,
+      "column": 1,
+      "message": "Variable 'result' declared successfully (type: any)."
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "symbol_table",
+   "name": "Symbol Table",
+   "status": "ok",
+   "summary": "scope tree built",
+   "data": {
+    "name": "global",
+    "kind": "global",
+    "level": 0,
+    "symbols": [
+     {
+      "name": "factorial",
+      "kind": "function",
+      "type": "any",
+      "line": 1,
+      "column": 1,
+      "scope": "global",
+      "params": [
+       "n"
+      ]
+     },
+     {
+      "name": "result",
+      "kind": "variable",
+      "type": "any",
+      "line": 9,
+      "column": 1,
+      "scope": "global"
+     }
+    ],
+    "children": [
+     {
+      "name": "function factorial",
+      "kind": "function",
+      "level": 1,
+      "symbols": [
+       {
+        "name": "n",
+        "kind": "parameter",
+        "type": "any",
+        "line": 1,
+        "column": 1,
+        "scope": "function factorial"
+       }
+      ],
+      "children": [
+       {
+        "name": "block",
+        "kind": "block",
+        "level": 2,
+        "symbols": [],
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  }
+ ],
+ "errors": [],
+ "warnings": []
+}

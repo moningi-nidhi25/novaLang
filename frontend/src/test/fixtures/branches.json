@@ -1,0 +1,5820 @@
+{
+ "ok": true,
+ "failed_stage": null,
+ "source": "// Conditions, else-if chains and logical operators.\nfunction grade(score) {\n    if (score >= 90) {\n        return \"A\";\n    } else if (score >= 75) {\n        return \"B\";\n    } else if (score >= 50) {\n        return \"C\";\n    } else {\n        return \"F\";\n    }\n}\n\nlet x = 10;\nlet y = 20;\nif (x < y) {\n    print(\"x is smaller\");\n} else {\n    print(\"x is larger\");\n}\n\nprint(grade(95));\nprint(grade(80));\nprint(grade(55));\nprint(grade(10));\n\nlet age = 20;\nlet hasId = true;\nif (age >= 18 && hasId) {\n    print(\"Entry allowed\");\n}\nif (!(age > 60) || false) {\n    print(\"Not a senior\");\n}\n",
+ "stages": [
+  {
+   "id": "source",
+   "name": "Source Code",
+   "status": "ok",
+   "summary": "35 lines, 582 characters",
+   "data": {
+    "text": "// Conditions, else-if chains and logical operators.\nfunction grade(score) {\n    if (score >= 90) {\n        return \"A\";\n    } else if (score >= 75) {\n        return \"B\";\n    } else if (score >= 50) {\n        return \"C\";\n    } else {\n        return \"F\";\n    }\n}\n\nlet x = 10;\nlet y = 20;\nif (x < y) {\n    print(\"x is smaller\");\n} else {\n    print(\"x is larger\");\n}\n\nprint(grade(95));\nprint(grade(80));\nprint(grade(55));\nprint(grade(10));\n\nlet age = 20;\nlet hasId = true;\nif (age >= 18 && hasId) {\n    print(\"Entry allowed\");\n}\nif (!(age > 60) || false) {\n    print(\"Not a senior\");\n}\n",
+    "lines": 35
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tokens",
+   "name": "Tokens",
+   "status": "ok",
+   "summary": "155 tokens",
+   "data": [
+    {
+     "type": "FUNCTION",
+     "lexeme": "function",
+     "value": null,
+     "line": 2,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "grade",
+     "value": null,
+     "line": 2,
+     "column": 10
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 2,
+     "column": 15
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "score",
+     "value": null,
+     "line": 2,
+     "column": 16
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 2,
+     "column": 21
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 2,
+     "column": 23
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 3,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 3,
+     "column": 8
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "score",
+     "value": null,
+     "line": 3,
+     "column": 9
+    },
+    {
+     "type": "GTE",
+     "lexeme": ">=",
+     "value": null,
+     "line": 3,
+     "column": 15
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "90",
+     "value": 90,
+     "line": 3,
+     "column": 18
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 3,
+     "column": 20
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 3,
+     "column": 22
+    },
+    {
+     "type": "RETURN",
+     "lexeme": "return",
+     "value": null,
+     "line": 4,
+     "column": 9
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"A\"",
+     "value": "A",
+     "line": 4,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 4,
+     "column": 19
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 5,
+     "column": 5
+    },
+    {
+     "type": "ELSE",
+     "lexeme": "else",
+     "value": null,
+     "line": 5,
+     "column": 7
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 5,
+     "column": 12
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 5,
+     "column": 15
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "score",
+     "value": null,
+     "line": 5,
+     "column": 16
+    },
+    {
+     "type": "GTE",
+     "lexeme": ">=",
+     "value": null,
+     "line": 5,
+     "column": 22
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "75",
+     "value": 75,
+     "line": 5,
+     "column": 25
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 5,
+     "column": 27
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 5,
+     "column": 29
+    },
+    {
+     "type": "RETURN",
+     "lexeme": "return",
+     "value": null,
+     "line": 6,
+     "column": 9
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"B\"",
+     "value": "B",
+     "line": 6,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 6,
+     "column": 19
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 7,
+     "column": 5
+    },
+    {
+     "type": "ELSE",
+     "lexeme": "else",
+     "value": null,
+     "line": 7,
+     "column": 7
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 7,
+     "column": 12
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 7,
+     "column": 15
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "score",
+     "value": null,
+     "line": 7,
+     "column": 16
+    },
+    {
+     "type": "GTE",
+     "lexeme": ">=",
+     "value": null,
+     "line": 7,
+     "column": 22
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "50",
+     "value": 50,
+     "line": 7,
+     "column": 25
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 7,
+     "column": 27
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 7,
+     "column": 29
+    },
+    {
+     "type": "RETURN",
+     "lexeme": "return",
+     "value": null,
+     "line": 8,
+     "column": 9
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"C\"",
+     "value": "C",
+     "line": 8,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 8,
+     "column": 19
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 9,
+     "column": 5
+    },
+    {
+     "type": "ELSE",
+     "lexeme": "else",
+     "value": null,
+     "line": 9,
+     "column": 7
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 9,
+     "column": 12
+    },
+    {
+     "type": "RETURN",
+     "lexeme": "return",
+     "value": null,
+     "line": 10,
+     "column": 9
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"F\"",
+     "value": "F",
+     "line": 10,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 10,
+     "column": 19
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 11,
+     "column": 5
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 12,
+     "column": 1
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 14,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "x",
+     "value": null,
+     "line": 14,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 14,
+     "column": 7
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "10",
+     "value": 10,
+     "line": 14,
+     "column": 9
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 14,
+     "column": 11
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 15,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "y",
+     "value": null,
+     "line": 15,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 15,
+     "column": 7
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "20",
+     "value": 20,
+     "line": 15,
+     "column": 9
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 15,
+     "column": 11
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 16,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 16,
+     "column": 4
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "x",
+     "value": null,
+     "line": 16,
+     "column": 5
+    },
+    {
+     "type": "LT",
+     "lexeme": "<",
+     "value": null,
+     "line": 16,
+     "column": 7
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "y",
+     "value": null,
+     "line": 16,
+     "column": 9
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 16,
+     "column": 10
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 16,
+     "column": 12
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 17,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 17,
+     "column": 10
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"x is smaller\"",
+     "value": "x is smaller",
+     "line": 17,
+     "column": 11
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 17,
+     "column": 25
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 17,
+     "column": 26
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 18,
+     "column": 1
+    },
+    {
+     "type": "ELSE",
+     "lexeme": "else",
+     "value": null,
+     "line": 18,
+     "column": 3
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 18,
+     "column": 8
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 19,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 19,
+     "column": 10
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"x is larger\"",
+     "value": "x is larger",
+     "line": 19,
+     "column": 11
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 19,
+     "column": 24
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 19,
+     "column": 25
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 20,
+     "column": 1
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 22,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 22,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "grade",
+     "value": null,
+     "line": 22,
+     "column": 7
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 22,
+     "column": 12
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "95",
+     "value": 95,
+     "line": 22,
+     "column": 13
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 22,
+     "column": 15
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 22,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 22,
+     "column": 17
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 23,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 23,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "grade",
+     "value": null,
+     "line": 23,
+     "column": 7
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 23,
+     "column": 12
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "80",
+     "value": 80,
+     "line": 23,
+     "column": 13
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 23,
+     "column": 15
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 23,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 23,
+     "column": 17
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 24,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 24,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "grade",
+     "value": null,
+     "line": 24,
+     "column": 7
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 24,
+     "column": 12
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "55",
+     "value": 55,
+     "line": 24,
+     "column": 13
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 24,
+     "column": 15
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 24,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 24,
+     "column": 17
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 25,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 25,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "grade",
+     "value": null,
+     "line": 25,
+     "column": 7
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 25,
+     "column": 12
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "10",
+     "value": 10,
+     "line": 25,
+     "column": 13
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 25,
+     "column": 15
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 25,
+     "column": 16
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 25,
+     "column": 17
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 27,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "age",
+     "value": null,
+     "line": 27,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 27,
+     "column": 9
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "20",
+     "value": 20,
+     "line": 27,
+     "column": 11
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 27,
+     "column": 13
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 28,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "hasId",
+     "value": null,
+     "line": 28,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 28,
+     "column": 11
+    },
+    {
+     "type": "TRUE",
+     "lexeme": "true",
+     "value": true,
+     "line": 28,
+     "column": 13
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 28,
+     "column": 17
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 29,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 29,
+     "column": 4
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "age",
+     "value": null,
+     "line": 29,
+     "column": 5
+    },
+    {
+     "type": "GTE",
+     "lexeme": ">=",
+     "value": null,
+     "line": 29,
+     "column": 9
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "18",
+     "value": 18,
+     "line": 29,
+     "column": 12
+    },
+    {
+     "type": "AND",
+     "lexeme": "&&",
+     "value": null,
+     "line": 29,
+     "column": 15
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "hasId",
+     "value": null,
+     "line": 29,
+     "column": 18
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 29,
+     "column": 23
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 29,
+     "column": 25
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 30,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 30,
+     "column": 10
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"Entry allowed\"",
+     "value": "Entry allowed",
+     "line": 30,
+     "column": 11
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 30,
+     "column": 26
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 30,
+     "column": 27
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 31,
+     "column": 1
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 32,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 32,
+     "column": 4
+    },
+    {
+     "type": "NOT",
+     "lexeme": "!",
+     "value": null,
+     "line": 32,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 32,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "age",
+     "value": null,
+     "line": 32,
+     "column": 7
+    },
+    {
+     "type": "GT",
+     "lexeme": ">",
+     "value": null,
+     "line": 32,
+     "column": 11
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "60",
+     "value": 60,
+     "line": 32,
+     "column": 13
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 32,
+     "column": 15
+    },
+    {
+     "type": "OR",
+     "lexeme": "||",
+     "value": null,
+     "line": 32,
+     "column": 17
+    },
+    {
+     "type": "FALSE",
+     "lexeme": "false",
+     "value": false,
+     "line": 32,
+     "column": 20
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 32,
+     "column": 25
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 32,
+     "column": 27
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 33,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 33,
+     "column": 10
+    },
+    {
+     "type": "STRING",
+     "lexeme": "\"Not a senior\"",
+     "value": "Not a senior",
+     "line": 33,
+     "column": 11
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 33,
+     "column": 25
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 33,
+     "column": 26
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 34,
+     "column": 1
+    },
+    {
+     "type": "EOF",
+     "lexeme": "",
+     "value": null,
+     "line": 35,
+     "column": 1
+    }
+   ],
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "ast",
+   "name": "Abstract Syntax Tree",
+   "status": "ok",
+   "summary": "12 top-level statements",
+   "data": {
+    "type": "Program",
+    "label": "",
+    "line": 2,
+    "column": 1,
+    "body": [
+     {
+      "type": "FunctionDeclaration",
+      "label": "grade(score)",
+      "line": 2,
+      "column": 1,
+      "name": "grade",
+      "params": [
+       "score"
+      ],
+      "body": {
+       "type": "Block",
+       "label": "",
+       "line": 2,
+       "column": 23,
+       "statements": [
+        {
+         "type": "IfStatement",
+         "label": "",
+         "line": 3,
+         "column": 5,
+         "condition": {
+          "type": "BinaryExpression",
+          "label": ">=",
+          "line": 3,
+          "column": 15,
+          "inferred_type": "bool",
+          "operator": ">=",
+          "left": {
+           "type": "Identifier",
+           "label": "score",
+           "line": 3,
+           "column": 9,
+           "inferred_type": "any",
+           "name": "score"
+          },
+          "right": {
+           "type": "Literal",
+           "label": "90",
+           "line": 3,
+           "column": 18,
+           "inferred_type": "int",
+           "value": 90,
+           "literal_type": "int"
+          }
+         },
+         "then_branch": {
+          "type": "Block",
+          "label": "",
+          "line": 3,
+          "column": 22,
+          "statements": [
+           {
+            "type": "ReturnStatement",
+            "label": "",
+            "line": 4,
+            "column": 9,
+            "value": {
+             "type": "Literal",
+             "label": "'A'",
+             "line": 4,
+             "column": 16,
+             "inferred_type": "string",
+             "value": "A",
+             "literal_type": "string"
+            }
+           }
+          ]
+         },
+         "else_branch": {
+          "type": "IfStatement",
+          "label": "",
+          "line": 5,
+          "column": 12,
+          "condition": {
+           "type": "BinaryExpression",
+           "label": ">=",
+           "line": 5,
+           "column": 22,
+           "inferred_type": "bool",
+           "operator": ">=",
+           "left": {
+            "type": "Identifier",
+            "label": "score",
+            "line": 5,
+            "column": 16,
+            "inferred_type": "any",
+            "name": "score"
+           },
+           "right": {
+            "type": "Literal",
+            "label": "75",
+            "line": 5,
+            "column": 25,
+            "inferred_type": "int",
+            "value": 75,
+            "literal_type": "int"
+           }
+          },
+          "then_branch": {
+           "type": "Block",
+           "label": "",
+           "line": 5,
+           "column": 29,
+           "statements": [
+            {
+             "type": "ReturnStatement",
+             "label": "",
+             "line": 6,
+             "column": 9,
+             "value": {
+              "type": "Literal",
+              "label": "'B'",
+              "line": 6,
+              "column": 16,
+              "inferred_type": "string",
+              "value": "B",
+              "literal_type": "string"
+             }
+            }
+           ]
+          },
+          "else_branch": {
+           "type": "IfStatement",
+           "label": "",
+           "line": 7,
+           "column": 12,
+           "condition": {
+            "type": "BinaryExpression",
+            "label": ">=",
+            "line": 7,
+            "column": 22,
+            "inferred_type": "bool",
+            "operator": ">=",
+            "left": {
+             "type": "Identifier",
+             "label": "score",
+             "line": 7,
+             "column": 16,
+             "inferred_type": "any",
+             "name": "score"
+            },
+            "right": {
+             "type": "Literal",
+             "label": "50",
+             "line": 7,
+             "column": 25,
+             "inferred_type": "int",
+             "value": 50,
+             "literal_type": "int"
+            }
+           },
+           "then_branch": {
+            "type": "Block",
+            "label": "",
+            "line": 7,
+            "column": 29,
+            "statements": [
+             {
+              "type": "ReturnStatement",
+              "label": "",
+              "line": 8,
+              "column": 9,
+              "value": {
+               "type": "Literal",
+               "label": "'C'",
+               "line": 8,
+               "column": 16,
+               "inferred_type": "string",
+               "value": "C",
+               "literal_type": "string"
+              }
+             }
+            ]
+           },
+           "else_branch": {
+            "type": "Block",
+            "label": "",
+            "line": 9,
+            "column": 12,
+            "statements": [
+             {
+              "type": "ReturnStatement",
+              "label": "",
+              "line": 10,
+              "column": 9,
+              "value": {
+               "type": "Literal",
+               "label": "'F'",
+               "line": 10,
+               "column": 16,
+               "inferred_type": "string",
+               "value": "F",
+               "literal_type": "string"
+              }
+             }
+            ]
+           }
+          }
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "VariableDeclaration",
+      "label": "x",
+      "line": 14,
+      "column": 1,
+      "name": "x",
+      "initializer": {
+       "type": "Literal",
+       "label": "10",
+       "line": 14,
+       "column": 9,
+       "inferred_type": "int",
+       "value": 10,
+       "literal_type": "int"
+      }
+     },
+     {
+      "type": "VariableDeclaration",
+      "label": "y",
+      "line": 15,
+      "column": 1,
+      "name": "y",
+      "initializer": {
+       "type": "Literal",
+       "label": "20",
+       "line": 15,
+       "column": 9,
+       "inferred_type": "int",
+       "value": 20,
+       "literal_type": "int"
+      }
+     },
+     {
+      "type": "IfStatement",
+      "label": "",
+      "line": 16,
+      "column": 1,
+      "condition": {
+       "type": "BinaryExpression",
+       "label": "<",
+       "line": 16,
+       "column": 7,
+       "inferred_type": "bool",
+       "operator": "<",
+       "left": {
+        "type": "Identifier",
+        "label": "x",
+        "line": 16,
+        "column": 5,
+        "inferred_type": "int",
+        "name": "x"
+       },
+       "right": {
+        "type": "Identifier",
+        "label": "y",
+        "line": 16,
+        "column": 9,
+        "inferred_type": "int",
+        "name": "y"
+       }
+      },
+      "then_branch": {
+       "type": "Block",
+       "label": "",
+       "line": 16,
+       "column": 12,
+       "statements": [
+        {
+         "type": "PrintStatement",
+         "label": "",
+         "line": 17,
+         "column": 5,
+         "expression": {
+          "type": "Literal",
+          "label": "'x is smaller'",
+          "line": 17,
+          "column": 11,
+          "inferred_type": "string",
+          "value": "x is smaller",
+          "literal_type": "string"
+         }
+        }
+       ]
+      },
+      "else_branch": {
+       "type": "Block",
+       "label": "",
+       "line": 18,
+       "column": 8,
+       "statements": [
+        {
+         "type": "PrintStatement",
+         "label": "",
+         "line": 19,
+         "column": 5,
+         "expression": {
+          "type": "Literal",
+          "label": "'x is larger'",
+          "line": 19,
+          "column": 11,
+          "inferred_type": "string",
+          "value": "x is larger",
+          "literal_type": "string"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 22,
+      "column": 1,
+      "expression": {
+       "type": "FunctionCall",
+       "label": "",
+       "line": 22,
+       "column": 7,
+       "inferred_type": "any",
+       "callee": {
+        "type": "Identifier",
+        "label": "grade",
+        "line": 22,
+        "column": 7,
+        "inferred_type": "function",
+        "name": "grade"
+       },
+       "arguments": [
+        {
+         "type": "Literal",
+         "label": "95",
+         "line": 22,
+         "column": 13,
+         "inferred_type": "int",
+         "value": 95,
+         "literal_type": "int"
+        }
+       ]
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 23,
+      "column": 1,
+      "expression": {
+       "type": "FunctionCall",
+       "label": "",
+       "line": 23,
+       "column": 7,
+       "inferred_type": "any",
+       "callee": {
+        "type": "Identifier",
+        "label": "grade",
+        "line": 23,
+        "column": 7,
+        "inferred_type": "function",
+        "name": "grade"
+       },
+       "arguments": [
+        {
+         "type": "Literal",
+         "label": "80",
+         "line": 23,
+         "column": 13,
+         "inferred_type": "int",
+         "value": 80,
+         "literal_type": "int"
+        }
+       ]
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 24,
+      "column": 1,
+      "expression": {
+       "type": "FunctionCall",
+       "label": "",
+       "line": 24,
+       "column": 7,
+       "inferred_type": "any",
+       "callee": {
+        "type": "Identifier",
+        "label": "grade",
+        "line": 24,
+        "column": 7,
+        "inferred_type": "function",
+        "name": "grade"
+       },
+       "arguments": [
+        {
+         "type": "Literal",
+         "label": "55",
+         "line": 24,
+         "column": 13,
+         "inferred_type": "int",
+         "value": 55,
+         "literal_type": "int"
+        }
+       ]
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 25,
+      "column": 1,
+      "expression": {
+       "type": "FunctionCall",
+       "label": "",
+       "line": 25,
+       "column": 7,
+       "inferred_type": "any",
+       "callee": {
+        "type": "Identifier",
+        "label": "grade",
+        "line": 25,
+        "column": 7,
+        "inferred_type": "function",
+        "name": "grade"
+       },
+       "arguments": [
+        {
+         "type": "Literal",
+         "label": "10",
+         "line": 25,
+         "column": 13,
+         "inferred_type": "int",
+         "value": 10,
+         "literal_type": "int"
+        }
+       ]
+      }
+     },
+     {
+      "type": "VariableDeclaration",
+      "label": "age",
+      "line": 27,
+      "column": 1,
+      "name": "age",
+      "initializer": {
+       "type": "Literal",
+       "label": "20",
+       "line": 27,
+       "column": 11,
+       "inferred_type": "int",
+       "value": 20,
+       "literal_type": "int"
+      }
+     },
+     {
+      "type": "VariableDeclaration",
+      "label": "hasId",
+      "line": 28,
+      "column": 1,
+      "name": "hasId",
+      "initializer": {
+       "type": "Literal",
+       "label": "true",
+       "line": 28,
+       "column": 13,
+       "inferred_type": "bool",
+       "value": true,
+       "literal_type": "bool"
+      }
+     },
+     {
+      "type": "IfStatement",
+      "label": "",
+      "line": 29,
+      "column": 1,
+      "condition": {
+       "type": "BinaryExpression",
+       "label": "&&",
+       "line": 29,
+       "column": 15,
+       "inferred_type": "bool",
+       "operator": "&&",
+       "left": {
+        "type": "BinaryExpression",
+        "label": ">=",
+        "line": 29,
+        "column": 9,
+        "inferred_type": "bool",
+        "operator": ">=",
+        "left": {
+         "type": "Identifier",
+         "label": "age",
+         "line": 29,
+         "column": 5,
+         "inferred_type": "int",
+         "name": "age"
+        },
+        "right": {
+         "type": "Literal",
+         "label": "18",
+         "line": 29,
+         "column": 12,
+         "inferred_type": "int",
+         "value": 18,
+         "literal_type": "int"
+        }
+       },
+       "right": {
+        "type": "Identifier",
+        "label": "hasId",
+        "line": 29,
+        "column": 18,
+        "inferred_type": "bool",
+        "name": "hasId"
+       }
+      },
+      "then_branch": {
+       "type": "Block",
+       "label": "",
+       "line": 29,
+       "column": 25,
+       "statements": [
+        {
+         "type": "PrintStatement",
+         "label": "",
+         "line": 30,
+         "column": 5,
+         "expression": {
+          "type": "Literal",
+          "label": "'Entry allowed'",
+          "line": 30,
+          "column": 11,
+          "inferred_type": "string",
+          "value": "Entry allowed",
+          "literal_type": "string"
+         }
+        }
+       ]
+      },
+      "else_branch": null
+     },
+     {
+      "type": "IfStatement",
+      "label": "",
+      "line": 32,
+      "column": 1,
+      "condition": {
+       "type": "BinaryExpression",
+       "label": "||",
+       "line": 32,
+       "column": 17,
+       "inferred_type": "bool",
+       "operator": "||",
+       "left": {
+        "type": "UnaryExpression",
+        "label": "!",
+        "line": 32,
+        "column": 5,
+        "inferred_type": "bool",
+        "operator": "!",
+        "operand": {
+         "type": "BinaryExpression",
+         "label": ">",
+         "line": 32,
+         "column": 11,
+         "inferred_type": "bool",
+         "operator": ">",
+         "left": {
+          "type": "Identifier",
+          "label": "age",
+          "line": 32,
+          "column": 7,
+          "inferred_type": "int",
+          "name": "age"
+         },
+         "right": {
+          "type": "Literal",
+          "label": "60",
+          "line": 32,
+          "column": 13,
+          "inferred_type": "int",
+          "value": 60,
+          "literal_type": "int"
+         }
+        }
+       },
+       "right": {
+        "type": "Literal",
+        "label": "false",
+        "line": 32,
+        "column": 20,
+        "inferred_type": "bool",
+        "value": false,
+        "literal_type": "bool"
+       }
+      },
+      "then_branch": {
+       "type": "Block",
+       "label": "",
+       "line": 32,
+       "column": 27,
+       "statements": [
+        {
+         "type": "PrintStatement",
+         "label": "",
+         "line": 33,
+         "column": 5,
+         "expression": {
+          "type": "Literal",
+          "label": "'Not a senior'",
+          "line": 33,
+          "column": 11,
+          "inferred_type": "string",
+          "value": "Not a senior",
+          "literal_type": "string"
+         }
+        }
+       ]
+      },
+      "else_branch": null
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "semantic",
+   "name": "Semantic Analysis",
+   "status": "ok",
+   "summary": "0 errors, 0 warnings",
+   "data": {
+    "info": [
+     {
+      "line": 2,
+      "column": 1,
+      "message": "Function 'grade' declared with 1 parameter."
+     },
+     {
+      "line": 14,
+      "column": 1,
+      "message": "Variable 'x' declared successfully (type: int)."
+     },
+     {
+      "line": 15,
+      "column": 1,
+      "message": "Variable 'y' declared successfully (type: int)."
+     },
+     {
+      "line": 27,
+      "column": 1,
+      "message": "Variable 'age' declared successfully (type: int)."
+     },
+     {
+      "line": 28,
+      "column": 1,
+      "message": "Variable 'hasId' declared successfully (type: bool)."
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "symbol_table",
+   "name": "Symbol Table",
+   "status": "ok",
+   "summary": "scope tree built",
+   "data": {
+    "name": "global",
+    "kind": "global",
+    "level": 0,
+    "symbols": [
+     {
+      "name": "grade",
+      "kind": "function",
+      "type": "any",
+      "line": 2,
+      "column": 1,
+      "scope": "global",
+      "params": [
+       "score"
+      ]
+     },
+     {
+      "name": "x",
+      "kind": "variable",
+      "type": "int",
+      "line": 14,
+      "column": 1,
+      "scope": "global"
+     },
+     {
+      "name": "y",
+      "kind": "variable",
+      "type": "int",
+      "line": 15,
+      "column": 1,
+      "scope": "global"
+     },
+     {
+      "name": "age",
+      "kind": "variable",
+      "type": "int",
+      "line": 27,
+      "column": 1,
+      "scope": "global"
+     },
+     {
+      "name": "hasId",
+      "kind": "variable",
+      "type": "bool",
+      "line": 28,
+      "column": 1,
+      "scope": "global"
+     }
+    ],
+    "children": [
+     {
+      "name": "function grade",
+      "kind": "function",
+      "level": 1,
+      "symbols": [
+       {
+        "name": "score",
+        "kind": "parameter",
+        "type": "any",
+        "line": 2,
+        "column": 1,
+        "scope": "function grade"
+       }
+      ],
+      "children": [
+       {
+        "name": "block",
+        "kind": "block",
+        "level": 2,
+        "symbols": [],
+        "children": []
+       },
+       {
+        "name": "block",
+        "kind": "block",
+        "level": 2,
+        "symbols": [],
+        "children": []
+       },
+       {
+        "name": "block",
+        "kind": "block",
+        "level": 2,
+        "symbols": [],
+        "children": []
+       },
+       {
+        "name": "block",
+        "kind": "block",
+        "level": 2,
+        "symbols": [],
+        "children": []
+       }
+      ]
+     },
+     {
+      "name": "block",
+      "kind": "block",
+      "level": 1,
+      "symbols": [],
+      "children": []
+     },
+     {
+      "name": "block",
+      "kind": "block",
+      "level": 1,
+      "symbols": [],
+      "children": []
+     },
+     {
+      "name": "block",
+      "kind": "block",
+      "level": 1,
+      "symbols": [],
+      "children": []
+     },
+     {
+      "name": "block",
+      "kind": "block",
+      "level": 1,
+      "symbols": [],
+      "children": []
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tac",
+   "name": "Three Address Code",
+   "status": "ok",
+   "summary": "60 instructions in 2 functions",
+   "data": {
+    "functions": [
+     {
+      "name": "main",
+      "params": [],
+      "kind": "main",
+      "instructions": [
+       {
+        "op": "copy",
+        "arg1": "10",
+        "arg2": null,
+        "result": "x",
+        "text": "x = 10",
+        "line": 14,
+        "column": 1,
+        "index": 0
+       },
+       {
+        "op": "copy",
+        "arg1": "20",
+        "arg2": null,
+        "result": "y",
+        "text": "y = 20",
+        "line": 15,
+        "column": 1,
+        "index": 1
+       },
+       {
+        "op": "<",
+        "arg1": "x",
+        "arg2": "y",
+        "result": "t1",
+        "text": "t1 = x < y",
+        "line": 16,
+        "column": 7,
+        "index": 2
+       },
+       {
+        "op": "if_false",
+        "arg1": "t1",
+        "arg2": null,
+        "result": "L1",
+        "text": "ifFalse t1 goto L1",
+        "line": 16,
+        "column": 1,
+        "index": 3
+       },
+       {
+        "op": "print",
+        "arg1": "\"x is smaller\"",
+        "arg2": null,
+        "result": null,
+        "text": "print \"x is smaller\"",
+        "line": 17,
+        "column": 5,
+        "index": 4
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L2",
+        "text": "goto L2",
+        "line": 16,
+        "column": 1,
+        "index": 5
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L1",
+        "text": "L1:",
+        "line": 0,
+        "column": 0,
+        "index": 6
+       },
+       {
+        "op": "print",
+        "arg1": "\"x is larger\"",
+        "arg2": null,
+        "result": null,
+        "text": "print \"x is larger\"",
+        "line": 19,
+        "column": 5,
+        "index": 7
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L2",
+        "text": "L2:",
+        "line": 0,
+        "column": 0,
+        "index": 8
+       },
+       {
+        "op": "param",
+        "arg1": "95",
+        "arg2": null,
+        "result": null,
+        "text": "param 95",
+        "line": 22,
+        "column": 7,
+        "index": 9
+       },
+       {
+        "op": "call",
+        "arg1": "grade",
+        "arg2": "1",
+        "result": "t2",
+        "text": "t2 = call grade, 1",
+        "line": 22,
+        "column": 7,
+        "index": 10
+       },
+       {
+        "op": "print",
+        "arg1": "t2",
+        "arg2": null,
+        "result": null,
+        "text": "print t2",
+        "line": 22,
+        "column": 1,
+        "index": 11
+       },
+       {
+        "op": "param",
+        "arg1": "80",
+        "arg2": null,
+        "result": null,
+        "text": "param 80",
+        "line": 23,
+        "column": 7,
+        "index": 12
+       },
+       {
+        "op": "call",
+        "arg1": "grade",
+        "arg2": "1",
+        "result": "t3",
+        "text": "t3 = call grade, 1",
+        "line": 23,
+        "column": 7,
+        "index": 13
+       },
+       {
+        "op": "print",
+        "arg1": "t3",
+        "arg2": null,
+        "result": null,
+        "text": "print t3",
+        "line": 23,
+        "column": 1,
+        "index": 14
+       },
+       {
+        "op": "param",
+        "arg1": "55",
+        "arg2": null,
+        "result": null,
+        "text": "param 55",
+        "line": 24,
+        "column": 7,
+        "index": 15
+       },
+       {
+        "op": "call",
+        "arg1": "grade",
+        "arg2": "1",
+        "result": "t4",
+        "text": "t4 = call grade, 1",
+        "line": 24,
+        "column": 7,
+        "index": 16
+       },
+       {
+        "op": "print",
+        "arg1": "t4",
+        "arg2": null,
+        "result": null,
+        "text": "print t4",
+        "line": 24,
+        "column": 1,
+        "index": 17
+       },
+       {
+        "op": "param",
+        "arg1": "10",
+        "arg2": null,
+        "result": null,
+        "text": "param 10",
+        "line": 25,
+        "column": 7,
+        "index": 18
+       },
+       {
+        "op": "call",
+        "arg1": "grade",
+        "arg2": "1",
+        "result": "t5",
+        "text": "t5 = call grade, 1",
+        "line": 25,
+        "column": 7,
+        "index": 19
+       },
+       {
+        "op": "print",
+        "arg1": "t5",
+        "arg2": null,
+        "result": null,
+        "text": "print t5",
+        "line": 25,
+        "column": 1,
+        "index": 20
+       },
+       {
+        "op": "copy",
+        "arg1": "20",
+        "arg2": null,
+        "result": "age",
+        "text": "age = 20",
+        "line": 27,
+        "column": 1,
+        "index": 21
+       },
+       {
+        "op": "copy",
+        "arg1": "true",
+        "arg2": null,
+        "result": "hasId",
+        "text": "hasId = true",
+        "line": 28,
+        "column": 1,
+        "index": 22
+       },
+       {
+        "op": ">=",
+        "arg1": "age",
+        "arg2": "18",
+        "result": "t7",
+        "text": "t7 = age >= 18",
+        "line": 29,
+        "column": 9,
+        "index": 23
+       },
+       {
+        "op": "copy",
+        "arg1": "t7",
+        "arg2": null,
+        "result": "t6",
+        "text": "t6 = t7",
+        "line": 29,
+        "column": 15,
+        "index": 24
+       },
+       {
+        "op": "if_false",
+        "arg1": "t6",
+        "arg2": null,
+        "result": "L3",
+        "text": "ifFalse t6 goto L3",
+        "line": 29,
+        "column": 15,
+        "index": 25
+       },
+       {
+        "op": "copy",
+        "arg1": "hasId",
+        "arg2": null,
+        "result": "t6",
+        "text": "t6 = hasId",
+        "line": 29,
+        "column": 15,
+        "index": 26
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L3",
+        "text": "L3:",
+        "line": 0,
+        "column": 0,
+        "index": 27
+       },
+       {
+        "op": "if_false",
+        "arg1": "t6",
+        "arg2": null,
+        "result": "L4",
+        "text": "ifFalse t6 goto L4",
+        "line": 29,
+        "column": 1,
+        "index": 28
+       },
+       {
+        "op": "print",
+        "arg1": "\"Entry allowed\"",
+        "arg2": null,
+        "result": null,
+        "text": "print \"Entry allowed\"",
+        "line": 30,
+        "column": 5,
+        "index": 29
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L4",
+        "text": "L4:",
+        "line": 0,
+        "column": 0,
+        "index": 30
+       },
+       {
+        "op": ">",
+        "arg1": "age",
+        "arg2": "60",
+        "result": "t9",
+        "text": "t9 = age > 60",
+        "line": 32,
+        "column": 11,
+        "index": 31
+       },
+       {
+        "op": "not",
+        "arg1": "t9",
+        "arg2": null,
+        "result": "t10",
+        "text": "t10 = !t9",
+        "line": 32,
+        "column": 5,
+        "index": 32
+       },
+       {
+        "op": "copy",
+        "arg1": "t10",
+        "arg2": null,
+        "result": "t8",
+        "text": "t8 = t10",
+        "line": 32,
+        "column": 17,
+        "index": 33
+       },
+       {
+        "op": "if_true",
+        "arg1": "t8",
+        "arg2": null,
+        "result": "L5",
+        "text": "if t8 goto L5",
+        "line": 32,
+        "column": 17,
+        "index": 34
+       },
+       {
+        "op": "copy",
+        "arg1": "false",
+        "arg2": null,
+        "result": "t8",
+        "text": "t8 = false",
+        "line": 32,
+        "column": 17,
+        "index": 35
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L5",
+        "text": "L5:",
+        "line": 0,
+        "column": 0,
+        "index": 36
+       },
+       {
+        "op": "if_false",
+        "arg1": "t8",
+        "arg2": null,
+        "result": "L6",
+        "text": "ifFalse t8 goto L6",
+        "line": 32,
+        "column": 1,
+        "index": 37
+       },
+       {
+        "op": "print",
+        "arg1": "\"Not a senior\"",
+        "arg2": null,
+        "result": null,
+        "text": "print \"Not a senior\"",
+        "line": 33,
+        "column": 5,
+        "index": 38
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L6",
+        "text": "L6:",
+        "line": 0,
+        "column": 0,
+        "index": 39
+       }
+      ]
+     },
+     {
+      "name": "grade",
+      "params": [
+       "score"
+      ],
+      "kind": "function",
+      "instructions": [
+       {
+        "op": ">=",
+        "arg1": "score",
+        "arg2": "90",
+        "result": "t1",
+        "text": "t1 = score >= 90",
+        "line": 3,
+        "column": 15,
+        "index": 0
+       },
+       {
+        "op": "if_false",
+        "arg1": "t1",
+        "arg2": null,
+        "result": "L7",
+        "text": "ifFalse t1 goto L7",
+        "line": 3,
+        "column": 5,
+        "index": 1
+       },
+       {
+        "op": "return",
+        "arg1": "\"A\"",
+        "arg2": null,
+        "result": null,
+        "text": "return \"A\"",
+        "line": 4,
+        "column": 9,
+        "index": 2
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L8",
+        "text": "goto L8",
+        "line": 3,
+        "column": 5,
+        "index": 3
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L7",
+        "text": "L7:",
+        "line": 0,
+        "column": 0,
+        "index": 4
+       },
+       {
+        "op": ">=",
+        "arg1": "score",
+        "arg2": "75",
+        "result": "t2",
+        "text": "t2 = score >= 75",
+        "line": 5,
+        "column": 22,
+        "index": 5
+       },
+       {
+        "op": "if_false",
+        "arg1": "t2",
+        "arg2": null,
+        "result": "L9",
+        "text": "ifFalse t2 goto L9",
+        "line": 5,
+        "column": 12,
+        "index": 6
+       },
+       {
+        "op": "return",
+        "arg1": "\"B\"",
+        "arg2": null,
+        "result": null,
+        "text": "return \"B\"",
+        "line": 6,
+        "column": 9,
+        "index": 7
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L10",
+        "text": "goto L10",
+        "line": 5,
+        "column": 12,
+        "index": 8
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L9",
+        "text": "L9:",
+        "line": 0,
+        "column": 0,
+        "index": 9
+       },
+       {
+        "op": ">=",
+        "arg1": "score",
+        "arg2": "50",
+        "result": "t3",
+        "text": "t3 = score >= 50",
+        "line": 7,
+        "column": 22,
+        "index": 10
+       },
+       {
+        "op": "if_false",
+        "arg1": "t3",
+        "arg2": null,
+        "result": "L11",
+        "text": "ifFalse t3 goto L11",
+        "line": 7,
+        "column": 12,
+        "index": 11
+       },
+       {
+        "op": "return",
+        "arg1": "\"C\"",
+        "arg2": null,
+        "result": null,
+        "text": "return \"C\"",
+        "line": 8,
+        "column": 9,
+        "index": 12
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L12",
+        "text": "goto L12",
+        "line": 7,
+        "column": 12,
+        "index": 13
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L11",
+        "text": "L11:",
+        "line": 0,
+        "column": 0,
+        "index": 14
+       },
+       {
+        "op": "return",
+        "arg1": "\"F\"",
+        "arg2": null,
+        "result": null,
+        "text": "return \"F\"",
+        "line": 10,
+        "column": 9,
+        "index": 15
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L12",
+        "text": "L12:",
+        "line": 0,
+        "column": 0,
+        "index": 16
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L10",
+        "text": "L10:",
+        "line": 0,
+        "column": 0,
+        "index": 17
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L8",
+        "text": "L8:",
+        "line": 0,
+        "column": 0,
+        "index": 18
+       },
+       {
+        "op": "return",
+        "arg1": "nil",
+        "arg2": null,
+        "result": null,
+        "text": "return nil",
+        "line": 2,
+        "column": 1,
+        "index": 19
+       }
+      ]
+     }
+    ],
+    "globals": [
+     "x",
+     "y",
+     "age",
+     "hasId"
+    ],
+    "listing": "main:\n    x = 10\n    y = 20\n    t1 = x < y\n    ifFalse t1 goto L1\n    print \"x is smaller\"\n    goto L2\nL1:\n    print \"x is larger\"\nL2:\n    param 95\n    t2 = call grade, 1\n    print t2\n    param 80\n    t3 = call grade, 1\n    print t3\n    param 55\n    t4 = call grade, 1\n    print t4\n    param 10\n    t5 = call grade, 1\n    print t5\n    age = 20\n    hasId = true\n    t7 = age >= 18\n    t6 = t7\n    ifFalse t6 goto L3\n    t6 = hasId\nL3:\n    ifFalse t6 goto L4\n    print \"Entry allowed\"\nL4:\n    t9 = age > 60\n    t10 = !t9\n    t8 = t10\n    if t8 goto L5\n    t8 = false\nL5:\n    ifFalse t8 goto L6\n    print \"Not a senior\"\nL6:\n\nfunction grade(score):\n    t1 = score >= 90\n    ifFalse t1 goto L7\n    return \"A\"\n    goto L8\nL7:\n    t2 = score >= 75\n    ifFalse t2 goto L9\n    return \"B\"\n    goto L10\nL9:\n    t3 = score >= 50\n    ifFalse t3 goto L11\n    return \"C\"\n    goto L12\nL11:\n    return \"F\"\nL12:\nL10:\nL8:\n    return nil"
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "cfg",
+   "name": "Basic Blocks & CFG",
+   "status": "ok",
+   "summary": "25 basic blocks",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B12"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 3,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "copy",
+          "arg1": "10",
+          "arg2": null,
+          "result": "x",
+          "text": "x = 10",
+          "line": 14,
+          "column": 1,
+          "index": 0
+         },
+         {
+          "op": "copy",
+          "arg1": "20",
+          "arg2": null,
+          "result": "y",
+          "text": "y = 20",
+          "line": 15,
+          "column": 1,
+          "index": 1
+         },
+         {
+          "op": "<",
+          "arg1": "x",
+          "arg2": "y",
+          "result": "t1",
+          "text": "t1 = x < y",
+          "line": 16,
+          "column": 7,
+          "index": 2
+         },
+         {
+          "op": "if_false",
+          "arg1": "t1",
+          "arg2": null,
+          "result": "L1",
+          "text": "ifFalse t1 goto L1",
+          "line": 16,
+          "column": 1,
+          "index": 3
+         }
+        ],
+        "successors": [
+         "B2",
+         "B3"
+        ],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": false
+       },
+       {
+        "id": 2,
+        "name": "B2",
+        "function": "main",
+        "start": 4,
+        "end": 5,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "print",
+          "arg1": "\"x is smaller\"",
+          "arg2": null,
+          "result": null,
+          "text": "print \"x is smaller\"",
+          "line": 17,
+          "column": 5,
+          "index": 4
+         },
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L2",
+          "text": "goto L2",
+          "line": 16,
+          "column": 1,
+          "index": 5
+         }
+        ],
+        "successors": [
+         "B4"
+        ],
+        "predecessors": [
+         "B1"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 3,
+        "name": "B3",
+        "function": "main",
+        "start": 6,
+        "end": 7,
+        "label": "L1",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L1",
+          "text": "L1:",
+          "line": 0,
+          "column": 0,
+          "index": 6
+         },
+         {
+          "op": "print",
+          "arg1": "\"x is larger\"",
+          "arg2": null,
+          "result": null,
+          "text": "print \"x is larger\"",
+          "line": 19,
+          "column": 5,
+          "index": 7
+         }
+        ],
+        "successors": [
+         "B4"
+        ],
+        "predecessors": [
+         "B1"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 4,
+        "name": "B4",
+        "function": "main",
+        "start": 8,
+        "end": 25,
+        "label": "L2",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L2",
+          "text": "L2:",
+          "line": 0,
+          "column": 0,
+          "index": 8
+         },
+         {
+          "op": "param",
+          "arg1": "95",
+          "arg2": null,
+          "result": null,
+          "text": "param 95",
+          "line": 22,
+          "column": 7,
+          "index": 9
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t2",
+          "text": "t2 = call grade, 1",
+          "line": 22,
+          "column": 7,
+          "index": 10
+         },
+         {
+          "op": "print",
+          "arg1": "t2",
+          "arg2": null,
+          "result": null,
+          "text": "print t2",
+          "line": 22,
+          "column": 1,
+          "index": 11
+         },
+         {
+          "op": "param",
+          "arg1": "80",
+          "arg2": null,
+          "result": null,
+          "text": "param 80",
+          "line": 23,
+          "column": 7,
+          "index": 12
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t3",
+          "text": "t3 = call grade, 1",
+          "line": 23,
+          "column": 7,
+          "index": 13
+         },
+         {
+          "op": "print",
+          "arg1": "t3",
+          "arg2": null,
+          "result": null,
+          "text": "print t3",
+          "line": 23,
+          "column": 1,
+          "index": 14
+         },
+         {
+          "op": "param",
+          "arg1": "55",
+          "arg2": null,
+          "result": null,
+          "text": "param 55",
+          "line": 24,
+          "column": 7,
+          "index": 15
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t4",
+          "text": "t4 = call grade, 1",
+          "line": 24,
+          "column": 7,
+          "index": 16
+         },
+         {
+          "op": "print",
+          "arg1": "t4",
+          "arg2": null,
+          "result": null,
+          "text": "print t4",
+          "line": 24,
+          "column": 1,
+          "index": 17
+         },
+         {
+          "op": "param",
+          "arg1": "10",
+          "arg2": null,
+          "result": null,
+          "text": "param 10",
+          "line": 25,
+          "column": 7,
+          "index": 18
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t5",
+          "text": "t5 = call grade, 1",
+          "line": 25,
+          "column": 7,
+          "index": 19
+         },
+         {
+          "op": "print",
+          "arg1": "t5",
+          "arg2": null,
+          "result": null,
+          "text": "print t5",
+          "line": 25,
+          "column": 1,
+          "index": 20
+         },
+         {
+          "op": "copy",
+          "arg1": "20",
+          "arg2": null,
+          "result": "age",
+          "text": "age = 20",
+          "line": 27,
+          "column": 1,
+          "index": 21
+         },
+         {
+          "op": "copy",
+          "arg1": "true",
+          "arg2": null,
+          "result": "hasId",
+          "text": "hasId = true",
+          "line": 28,
+          "column": 1,
+          "index": 22
+         },
+         {
+          "op": ">=",
+          "arg1": "age",
+          "arg2": "18",
+          "result": "t7",
+          "text": "t7 = age >= 18",
+          "line": 29,
+          "column": 9,
+          "index": 23
+         },
+         {
+          "op": "copy",
+          "arg1": "t7",
+          "arg2": null,
+          "result": "t6",
+          "text": "t6 = t7",
+          "line": 29,
+          "column": 15,
+          "index": 24
+         },
+         {
+          "op": "if_false",
+          "arg1": "t6",
+          "arg2": null,
+          "result": "L3",
+          "text": "ifFalse t6 goto L3",
+          "line": 29,
+          "column": 15,
+          "index": 25
+         }
+        ],
+        "successors": [
+         "B5",
+         "B6"
+        ],
+        "predecessors": [
+         "B2",
+         "B3"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 5,
+        "name": "B5",
+        "function": "main",
+        "start": 26,
+        "end": 26,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "copy",
+          "arg1": "hasId",
+          "arg2": null,
+          "result": "t6",
+          "text": "t6 = hasId",
+          "line": 29,
+          "column": 15,
+          "index": 26
+         }
+        ],
+        "successors": [
+         "B6"
+        ],
+        "predecessors": [
+         "B4"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 6,
+        "name": "B6",
+        "function": "main",
+        "start": 27,
+        "end": 28,
+        "label": "L3",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L3",
+          "text": "L3:",
+          "line": 0,
+          "column": 0,
+          "index": 27
+         },
+         {
+          "op": "if_false",
+          "arg1": "t6",
+          "arg2": null,
+          "result": "L4",
+          "text": "ifFalse t6 goto L4",
+          "line": 29,
+          "column": 1,
+          "index": 28
+         }
+        ],
+        "successors": [
+         "B7",
+         "B8"
+        ],
+        "predecessors": [
+         "B4",
+         "B5"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 7,
+        "name": "B7",
+        "function": "main",
+        "start": 29,
+        "end": 29,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "print",
+          "arg1": "\"Entry allowed\"",
+          "arg2": null,
+          "result": null,
+          "text": "print \"Entry allowed\"",
+          "line": 30,
+          "column": 5,
+          "index": 29
+         }
+        ],
+        "successors": [
+         "B8"
+        ],
+        "predecessors": [
+         "B6"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 8,
+        "name": "B8",
+        "function": "main",
+        "start": 30,
+        "end": 34,
+        "label": "L4",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L4",
+          "text": "L4:",
+          "line": 0,
+          "column": 0,
+          "index": 30
+         },
+         {
+          "op": ">",
+          "arg1": "age",
+          "arg2": "60",
+          "result": "t9",
+          "text": "t9 = age > 60",
+          "line": 32,
+          "column": 11,
+          "index": 31
+         },
+         {
+          "op": "not",
+          "arg1": "t9",
+          "arg2": null,
+          "result": "t10",
+          "text": "t10 = !t9",
+          "line": 32,
+          "column": 5,
+          "index": 32
+         },
+         {
+          "op": "copy",
+          "arg1": "t10",
+          "arg2": null,
+          "result": "t8",
+          "text": "t8 = t10",
+          "line": 32,
+          "column": 17,
+          "index": 33
+         },
+         {
+          "op": "if_true",
+          "arg1": "t8",
+          "arg2": null,
+          "result": "L5",
+          "text": "if t8 goto L5",
+          "line": 32,
+          "column": 17,
+          "index": 34
+         }
+        ],
+        "successors": [
+         "B10",
+         "B9"
+        ],
+        "predecessors": [
+         "B6",
+         "B7"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 9,
+        "name": "B9",
+        "function": "main",
+        "start": 35,
+        "end": 35,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "copy",
+          "arg1": "false",
+          "arg2": null,
+          "result": "t8",
+          "text": "t8 = false",
+          "line": 32,
+          "column": 17,
+          "index": 35
+         }
+        ],
+        "successors": [
+         "B10"
+        ],
+        "predecessors": [
+         "B8"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 10,
+        "name": "B10",
+        "function": "main",
+        "start": 36,
+        "end": 37,
+        "label": "L5",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L5",
+          "text": "L5:",
+          "line": 0,
+          "column": 0,
+          "index": 36
+         },
+         {
+          "op": "if_false",
+          "arg1": "t8",
+          "arg2": null,
+          "result": "L6",
+          "text": "ifFalse t8 goto L6",
+          "line": 32,
+          "column": 1,
+          "index": 37
+         }
+        ],
+        "successors": [
+         "B11",
+         "B12"
+        ],
+        "predecessors": [
+         "B8",
+         "B9"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 11,
+        "name": "B11",
+        "function": "main",
+        "start": 38,
+        "end": 38,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "print",
+          "arg1": "\"Not a senior\"",
+          "arg2": null,
+          "result": null,
+          "text": "print \"Not a senior\"",
+          "line": 33,
+          "column": 5,
+          "index": 38
+         }
+        ],
+        "successors": [
+         "B12"
+        ],
+        "predecessors": [
+         "B10"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 12,
+        "name": "B12",
+        "function": "main",
+        "start": 39,
+        "end": 39,
+        "label": "L6",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L6",
+          "text": "L6:",
+          "line": 0,
+          "column": 0,
+          "index": 39
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B10",
+         "B11"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       }
+      ],
+      "edges": [
+       {
+        "source": "B1",
+        "target": "B2",
+        "kind": "true"
+       },
+       {
+        "source": "B1",
+        "target": "B3",
+        "kind": "false"
+       },
+       {
+        "source": "B2",
+        "target": "B4",
+        "kind": "jump"
+       },
+       {
+        "source": "B3",
+        "target": "B4",
+        "kind": "next"
+       },
+       {
+        "source": "B4",
+        "target": "B5",
+        "kind": "true"
+       },
+       {
+        "source": "B4",
+        "target": "B6",
+        "kind": "false"
+       },
+       {
+        "source": "B5",
+        "target": "B6",
+        "kind": "next"
+       },
+       {
+        "source": "B6",
+        "target": "B7",
+        "kind": "true"
+       },
+       {
+        "source": "B6",
+        "target": "B8",
+        "kind": "false"
+       },
+       {
+        "source": "B7",
+        "target": "B8",
+        "kind": "next"
+       },
+       {
+        "source": "B8",
+        "target": "B10",
+        "kind": "true"
+       },
+       {
+        "source": "B8",
+        "target": "B9",
+        "kind": "false"
+       },
+       {
+        "source": "B9",
+        "target": "B10",
+        "kind": "next"
+       },
+       {
+        "source": "B10",
+        "target": "B11",
+        "kind": "true"
+       },
+       {
+        "source": "B10",
+        "target": "B12",
+        "kind": "false"
+       },
+       {
+        "source": "B11",
+        "target": "B12",
+        "kind": "next"
+       }
+      ]
+     },
+     {
+      "function": "grade",
+      "entry": "B1",
+      "exits": [
+       "B2",
+       "B5",
+       "B8",
+       "B10",
+       "B13"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "grade",
+        "start": 0,
+        "end": 1,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": ">=",
+          "arg1": "score",
+          "arg2": "90",
+          "result": "t1",
+          "text": "t1 = score >= 90",
+          "line": 3,
+          "column": 15,
+          "index": 0
+         },
+         {
+          "op": "if_false",
+          "arg1": "t1",
+          "arg2": null,
+          "result": "L7",
+          "text": "ifFalse t1 goto L7",
+          "line": 3,
+          "column": 5,
+          "index": 1
+         }
+        ],
+        "successors": [
+         "B2",
+         "B4"
+        ],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": false
+       },
+       {
+        "id": 2,
+        "name": "B2",
+        "function": "grade",
+        "start": 2,
+        "end": 2,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "return",
+          "arg1": "\"A\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"A\"",
+          "line": 4,
+          "column": 9,
+          "index": 2
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B1"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       },
+       {
+        "id": 3,
+        "name": "B3",
+        "function": "grade",
+        "start": 3,
+        "end": 3,
+        "label": null,
+        "leader_reasons": [
+         "follows a return"
+        ],
+        "instructions": [
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L8",
+          "text": "goto L8",
+          "line": 3,
+          "column": 5,
+          "index": 3
+         }
+        ],
+        "successors": [
+         "B13"
+        ],
+        "predecessors": [],
+        "reachable": false,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 4,
+        "name": "B4",
+        "function": "grade",
+        "start": 4,
+        "end": 6,
+        "label": "L7",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L7",
+          "text": "L7:",
+          "line": 0,
+          "column": 0,
+          "index": 4
+         },
+         {
+          "op": ">=",
+          "arg1": "score",
+          "arg2": "75",
+          "result": "t2",
+          "text": "t2 = score >= 75",
+          "line": 5,
+          "column": 22,
+          "index": 5
+         },
+         {
+          "op": "if_false",
+          "arg1": "t2",
+          "arg2": null,
+          "result": "L9",
+          "text": "ifFalse t2 goto L9",
+          "line": 5,
+          "column": 12,
+          "index": 6
+         }
+        ],
+        "successors": [
+         "B5",
+         "B7"
+        ],
+        "predecessors": [
+         "B1"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 5,
+        "name": "B5",
+        "function": "grade",
+        "start": 7,
+        "end": 7,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "return",
+          "arg1": "\"B\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"B\"",
+          "line": 6,
+          "column": 9,
+          "index": 7
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B4"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       },
+       {
+        "id": 6,
+        "name": "B6",
+        "function": "grade",
+        "start": 8,
+        "end": 8,
+        "label": null,
+        "leader_reasons": [
+         "follows a return"
+        ],
+        "instructions": [
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L10",
+          "text": "goto L10",
+          "line": 5,
+          "column": 12,
+          "index": 8
+         }
+        ],
+        "successors": [
+         "B12"
+        ],
+        "predecessors": [],
+        "reachable": false,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 7,
+        "name": "B7",
+        "function": "grade",
+        "start": 9,
+        "end": 11,
+        "label": "L9",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L9",
+          "text": "L9:",
+          "line": 0,
+          "column": 0,
+          "index": 9
+         },
+         {
+          "op": ">=",
+          "arg1": "score",
+          "arg2": "50",
+          "result": "t3",
+          "text": "t3 = score >= 50",
+          "line": 7,
+          "column": 22,
+          "index": 10
+         },
+         {
+          "op": "if_false",
+          "arg1": "t3",
+          "arg2": null,
+          "result": "L11",
+          "text": "ifFalse t3 goto L11",
+          "line": 7,
+          "column": 12,
+          "index": 11
+         }
+        ],
+        "successors": [
+         "B8",
+         "B10"
+        ],
+        "predecessors": [
+         "B4"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 8,
+        "name": "B8",
+        "function": "grade",
+        "start": 12,
+        "end": 12,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "return",
+          "arg1": "\"C\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"C\"",
+          "line": 8,
+          "column": 9,
+          "index": 12
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B7"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       },
+       {
+        "id": 9,
+        "name": "B9",
+        "function": "grade",
+        "start": 13,
+        "end": 13,
+        "label": null,
+        "leader_reasons": [
+         "follows a return"
+        ],
+        "instructions": [
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L12",
+          "text": "goto L12",
+          "line": 7,
+          "column": 12,
+          "index": 13
+         }
+        ],
+        "successors": [
+         "B11"
+        ],
+        "predecessors": [],
+        "reachable": false,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 10,
+        "name": "B10",
+        "function": "grade",
+        "start": 14,
+        "end": 15,
+        "label": "L11",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L11",
+          "text": "L11:",
+          "line": 0,
+          "column": 0,
+          "index": 14
+         },
+         {
+          "op": "return",
+          "arg1": "\"F\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"F\"",
+          "line": 10,
+          "column": 9,
+          "index": 15
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B7"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       },
+       {
+        "id": 11,
+        "name": "B11",
+        "function": "grade",
+        "start": 16,
+        "end": 16,
+        "label": "L12",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a return"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L12",
+          "text": "L12:",
+          "line": 0,
+          "column": 0,
+          "index": 16
+         }
+        ],
+        "successors": [
+         "B12"
+        ],
+        "predecessors": [
+         "B9"
+        ],
+        "reachable": false,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 12,
+        "name": "B12",
+        "function": "grade",
+        "start": 17,
+        "end": 17,
+        "label": "L10",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L10",
+          "text": "L10:",
+          "line": 0,
+          "column": 0,
+          "index": 17
+         }
+        ],
+        "successors": [
+         "B13"
+        ],
+        "predecessors": [
+         "B6",
+         "B11"
+        ],
+        "reachable": false,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 13,
+        "name": "B13",
+        "function": "grade",
+        "start": 18,
+        "end": 19,
+        "label": "L8",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L8",
+          "text": "L8:",
+          "line": 0,
+          "column": 0,
+          "index": 18
+         },
+         {
+          "op": "return",
+          "arg1": "nil",
+          "arg2": null,
+          "result": null,
+          "text": "return nil",
+          "line": 2,
+          "column": 1,
+          "index": 19
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B3",
+         "B12"
+        ],
+        "reachable": false,
+        "is_entry": false,
+        "is_exit": true
+       }
+      ],
+      "edges": [
+       {
+        "source": "B1",
+        "target": "B2",
+        "kind": "true"
+       },
+       {
+        "source": "B1",
+        "target": "B4",
+        "kind": "false"
+       },
+       {
+        "source": "B3",
+        "target": "B13",
+        "kind": "jump"
+       },
+       {
+        "source": "B4",
+        "target": "B5",
+        "kind": "true"
+       },
+       {
+        "source": "B4",
+        "target": "B7",
+        "kind": "false"
+       },
+       {
+        "source": "B6",
+        "target": "B12",
+        "kind": "jump"
+       },
+       {
+        "source": "B7",
+        "target": "B8",
+        "kind": "true"
+       },
+       {
+        "source": "B7",
+        "target": "B10",
+        "kind": "false"
+       },
+       {
+        "source": "B9",
+        "target": "B11",
+        "kind": "jump"
+       },
+       {
+        "source": "B11",
+        "target": "B12",
+        "kind": "next"
+       },
+       {
+        "source": "B12",
+        "target": "B13",
+        "kind": "next"
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_tac",
+   "name": "Optimized TAC",
+   "status": "ok",
+   "summary": "60 -> 32 instructions, 46 changes",
+   "data": {
+    "original": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "copy",
+         "arg1": "10",
+         "arg2": null,
+         "result": "x",
+         "text": "x = 10",
+         "line": 14,
+         "column": 1,
+         "index": 0
+        },
+        {
+         "op": "copy",
+         "arg1": "20",
+         "arg2": null,
+         "result": "y",
+         "text": "y = 20",
+         "line": 15,
+         "column": 1,
+         "index": 1
+        },
+        {
+         "op": "<",
+         "arg1": "x",
+         "arg2": "y",
+         "result": "t1",
+         "text": "t1 = x < y",
+         "line": 16,
+         "column": 7,
+         "index": 2
+        },
+        {
+         "op": "if_false",
+         "arg1": "t1",
+         "arg2": null,
+         "result": "L1",
+         "text": "ifFalse t1 goto L1",
+         "line": 16,
+         "column": 1,
+         "index": 3
+        },
+        {
+         "op": "print",
+         "arg1": "\"x is smaller\"",
+         "arg2": null,
+         "result": null,
+         "text": "print \"x is smaller\"",
+         "line": 17,
+         "column": 5,
+         "index": 4
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L2",
+         "text": "goto L2",
+         "line": 16,
+         "column": 1,
+         "index": 5
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L1",
+         "text": "L1:",
+         "line": 0,
+         "column": 0,
+         "index": 6
+        },
+        {
+         "op": "print",
+         "arg1": "\"x is larger\"",
+         "arg2": null,
+         "result": null,
+         "text": "print \"x is larger\"",
+         "line": 19,
+         "column": 5,
+         "index": 7
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L2",
+         "text": "L2:",
+         "line": 0,
+         "column": 0,
+         "index": 8
+        },
+        {
+         "op": "param",
+         "arg1": "95",
+         "arg2": null,
+         "result": null,
+         "text": "param 95",
+         "line": 22,
+         "column": 7,
+         "index": 9
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t2",
+         "text": "t2 = call grade, 1",
+         "line": 22,
+         "column": 7,
+         "index": 10
+        },
+        {
+         "op": "print",
+         "arg1": "t2",
+         "arg2": null,
+         "result": null,
+         "text": "print t2",
+         "line": 22,
+         "column": 1,
+         "index": 11
+        },
+        {
+         "op": "param",
+         "arg1": "80",
+         "arg2": null,
+         "result": null,
+         "text": "param 80",
+         "line": 23,
+         "column": 7,
+         "index": 12
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t3",
+         "text": "t3 = call grade, 1",
+         "line": 23,
+         "column": 7,
+         "index": 13
+        },
+        {
+         "op": "print",
+         "arg1": "t3",
+         "arg2": null,
+         "result": null,
+         "text": "print t3",
+         "line": 23,
+         "column": 1,
+         "index": 14
+        },
+        {
+         "op": "param",
+         "arg1": "55",
+         "arg2": null,
+         "result": null,
+         "text": "param 55",
+         "line": 24,
+         "column": 7,
+         "index": 15
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t4",
+         "text": "t4 = call grade, 1",
+         "line": 24,
+         "column": 7,
+         "index": 16
+        },
+        {
+         "op": "print",
+         "arg1": "t4",
+         "arg2": null,
+         "result": null,
+         "text": "print t4",
+         "line": 24,
+         "column": 1,
+         "index": 17
+        },
+        {
+         "op": "param",
+         "arg1": "10",
+         "arg2": null,
+         "result": null,
+         "text": "param 10",
+         "line": 25,
+         "column": 7,
+         "index": 18
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t5",
+         "text": "t5 = call grade, 1",
+         "line": 25,
+         "column": 7,
+         "index": 19
+        },
+        {
+         "op": "print",
+         "arg1": "t5",
+         "arg2": null,
+         "result": null,
+         "text": "print t5",
+         "line": 25,
+         "column": 1,
+         "index": 20
+        },
+        {
+         "op": "copy",
+         "arg1": "20",
+         "arg2": null,
+         "result": "age",
+         "text": "age = 20",
+         "line": 27,
+         "column": 1,
+         "index": 21
+        },
+        {
+         "op": "copy",
+         "arg1": "true",
+         "arg2": null,
+         "result": "hasId",
+         "text": "hasId = true",
+         "line": 28,
+         "column": 1,
+         "index": 22
+        },
+        {
+         "op": ">=",
+         "arg1": "age",
+         "arg2": "18",
+         "result": "t7",
+         "text": "t7 = age >= 18",
+         "line": 29,
+         "column": 9,
+         "index": 23
+        },
+        {
+         "op": "copy",
+         "arg1": "t7",
+         "arg2": null,
+         "result": "t6",
+         "text": "t6 = t7",
+         "line": 29,
+         "column": 15,
+         "index": 24
+        },
+        {
+         "op": "if_false",
+         "arg1": "t6",
+         "arg2": null,
+         "result": "L3",
+         "text": "ifFalse t6 goto L3",
+         "line": 29,
+         "column": 15,
+         "index": 25
+        },
+        {
+         "op": "copy",
+         "arg1": "hasId",
+         "arg2": null,
+         "result": "t6",
+         "text": "t6 = hasId",
+         "line": 29,
+         "column": 15,
+         "index": 26
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L3",
+         "text": "L3:",
+         "line": 0,
+         "column": 0,
+         "index": 27
+        },
+        {
+         "op": "if_false",
+         "arg1": "t6",
+         "arg2": null,
+         "result": "L4",
+         "text": "ifFalse t6 goto L4",
+         "line": 29,
+         "column": 1,
+         "index": 28
+        },
+        {
+         "op": "print",
+         "arg1": "\"Entry allowed\"",
+         "arg2": null,
+         "result": null,
+         "text": "print \"Entry allowed\"",
+         "line": 30,
+         "column": 5,
+         "index": 29
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L4",
+         "text": "L4:",
+         "line": 0,
+         "column": 0,
+         "index": 30
+        },
+        {
+         "op": ">",
+         "arg1": "age",
+         "arg2": "60",
+         "result": "t9",
+         "text": "t9 = age > 60",
+         "line": 32,
+         "column": 11,
+         "index": 31
+        },
+        {
+         "op": "not",
+         "arg1": "t9",
+         "arg2": null,
+         "result": "t10",
+         "text": "t10 = !t9",
+         "line": 32,
+         "column": 5,
+         "index": 32
+        },
+        {
+         "op": "copy",
+         "arg1": "t10",
+         "arg2": null,
+         "result": "t8",
+         "text": "t8 = t10",
+         "line": 32,
+         "column": 17,
+         "index": 33
+        },
+        {
+         "op": "if_true",
+         "arg1": "t8",
+         "arg2": null,
+         "result": "L5",
+         "text": "if t8 goto L5",
+         "line": 32,
+         "column": 17,
+         "index": 34
+        },
+        {
+         "op": "copy",
+         "arg1": "false",
+         "arg2": null,
+         "result": "t8",
+         "text": "t8 = false",
+         "line": 32,
+         "column": 17,
+         "index": 35
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L5",
+         "text": "L5:",
+         "line": 0,
+         "column": 0,
+         "index": 36
+        },
+        {
+         "op": "if_false",
+         "arg1": "t8",
+         "arg2": null,
+         "result": "L6",
+         "text": "ifFalse t8 goto L6",
+         "line": 32,
+         "column": 1,
+         "index": 37
+        },
+        {
+         "op": "print",
+         "arg1": "\"Not a senior\"",
+         "arg2": null,
+         "result": null,
+         "text": "print \"Not a senior\"",
+         "line": 33,
+         "column": 5,
+         "index": 38
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L6",
+         "text": "L6:",
+         "line": 0,
+         "column": 0,
+         "index": 39
+        }
+       ]
+      },
+      {
+       "name": "grade",
+       "params": [
+        "score"
+       ],
+       "kind": "function",
+       "instructions": [
+        {
+         "op": ">=",
+         "arg1": "score",
+         "arg2": "90",
+         "result": "t1",
+         "text": "t1 = score >= 90",
+         "line": 3,
+         "column": 15,
+         "index": 0
+        },
+        {
+         "op": "if_false",
+         "arg1": "t1",
+         "arg2": null,
+         "result": "L7",
+         "text": "ifFalse t1 goto L7",
+         "line": 3,
+         "column": 5,
+         "index": 1
+        },
+        {
+         "op": "return",
+         "arg1": "\"A\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"A\"",
+         "line": 4,
+         "column": 9,
+         "index": 2
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L8",
+         "text": "goto L8",
+         "line": 3,
+         "column": 5,
+         "index": 3
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L7",
+         "text": "L7:",
+         "line": 0,
+         "column": 0,
+         "index": 4
+        },
+        {
+         "op": ">=",
+         "arg1": "score",
+         "arg2": "75",
+         "result": "t2",
+         "text": "t2 = score >= 75",
+         "line": 5,
+         "column": 22,
+         "index": 5
+        },
+        {
+         "op": "if_false",
+         "arg1": "t2",
+         "arg2": null,
+         "result": "L9",
+         "text": "ifFalse t2 goto L9",
+         "line": 5,
+         "column": 12,
+         "index": 6
+        },
+        {
+         "op": "return",
+         "arg1": "\"B\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"B\"",
+         "line": 6,
+         "column": 9,
+         "index": 7
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L10",
+         "text": "goto L10",
+         "line": 5,
+         "column": 12,
+         "index": 8
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L9",
+         "text": "L9:",
+         "line": 0,
+         "column": 0,
+         "index": 9
+        },
+        {
+         "op": ">=",
+         "arg1": "score",
+         "arg2": "50",
+         "result": "t3",
+         "text": "t3 = score >= 50",
+         "line": 7,
+         "column": 22,
+         "index": 10
+        },
+        {
+         "op": "if_false",
+         "arg1": "t3",
+         "arg2": null,
+         "result": "L11",
+         "text": "ifFalse t3 goto L11",
+         "line": 7,
+         "column": 12,
+         "index": 11
+        },
+        {
+         "op": "return",
+         "arg1": "\"C\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"C\"",
+         "line": 8,
+         "column": 9,
+         "index": 12
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L12",
+         "text": "goto L12",
+         "line": 7,
+         "column": 12,
+         "index": 13
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L11",
+         "text": "L11:",
+         "line": 0,
+         "column": 0,
+         "index": 14
+        },
+        {
+         "op": "return",
+         "arg1": "\"F\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"F\"",
+         "line": 10,
+         "column": 9,
+         "index": 15
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L12",
+         "text": "L12:",
+         "line": 0,
+         "column": 0,
+         "index": 16
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L10",
+         "text": "L10:",
+         "line": 0,
+         "column": 0,
+         "index": 17
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L8",
+         "text": "L8:",
+         "line": 0,
+         "column": 0,
+         "index": 18
+        },
+        {
+         "op": "return",
+         "arg1": "nil",
+         "arg2": null,
+         "result": null,
+         "text": "return nil",
+         "line": 2,
+         "column": 1,
+         "index": 19
+        }
+       ]
+      }
+     ],
+     "globals": [
+      "x",
+      "y",
+      "age",
+      "hasId"
+     ],
+     "listing": "main:\n    x = 10\n    y = 20\n    t1 = x < y\n    ifFalse t1 goto L1\n    print \"x is smaller\"\n    goto L2\nL1:\n    print \"x is larger\"\nL2:\n    param 95\n    t2 = call grade, 1\n    print t2\n    param 80\n    t3 = call grade, 1\n    print t3\n    param 55\n    t4 = call grade, 1\n    print t4\n    param 10\n    t5 = call grade, 1\n    print t5\n    age = 20\n    hasId = true\n    t7 = age >= 18\n    t6 = t7\n    ifFalse t6 goto L3\n    t6 = hasId\nL3:\n    ifFalse t6 goto L4\n    print \"Entry allowed\"\nL4:\n    t9 = age > 60\n    t10 = !t9\n    t8 = t10\n    if t8 goto L5\n    t8 = false\nL5:\n    ifFalse t8 goto L6\n    print \"Not a senior\"\nL6:\n\nfunction grade(score):\n    t1 = score >= 90\n    ifFalse t1 goto L7\n    return \"A\"\n    goto L8\nL7:\n    t2 = score >= 75\n    ifFalse t2 goto L9\n    return \"B\"\n    goto L10\nL9:\n    t3 = score >= 50\n    ifFalse t3 goto L11\n    return \"C\"\n    goto L12\nL11:\n    return \"F\"\nL12:\nL10:\nL8:\n    return nil"
+    },
+    "optimized": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "copy",
+         "arg1": "10",
+         "arg2": null,
+         "result": "x",
+         "text": "x = 10",
+         "line": 14,
+         "column": 1,
+         "index": 0
+        },
+        {
+         "op": "copy",
+         "arg1": "20",
+         "arg2": null,
+         "result": "y",
+         "text": "y = 20",
+         "line": 15,
+         "column": 1,
+         "index": 1
+        },
+        {
+         "op": "print",
+         "arg1": "\"x is smaller\"",
+         "arg2": null,
+         "result": null,
+         "text": "print \"x is smaller\"",
+         "line": 17,
+         "column": 5,
+         "index": 2
+        },
+        {
+         "op": "param",
+         "arg1": "95",
+         "arg2": null,
+         "result": null,
+         "text": "param 95",
+         "line": 22,
+         "column": 7,
+         "index": 3
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t2",
+         "text": "t2 = call grade, 1",
+         "line": 22,
+         "column": 7,
+         "index": 4
+        },
+        {
+         "op": "print",
+         "arg1": "t2",
+         "arg2": null,
+         "result": null,
+         "text": "print t2",
+         "line": 22,
+         "column": 1,
+         "index": 5
+        },
+        {
+         "op": "param",
+         "arg1": "80",
+         "arg2": null,
+         "result": null,
+         "text": "param 80",
+         "line": 23,
+         "column": 7,
+         "index": 6
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t3",
+         "text": "t3 = call grade, 1",
+         "line": 23,
+         "column": 7,
+         "index": 7
+        },
+        {
+         "op": "print",
+         "arg1": "t3",
+         "arg2": null,
+         "result": null,
+         "text": "print t3",
+         "line": 23,
+         "column": 1,
+         "index": 8
+        },
+        {
+         "op": "param",
+         "arg1": "55",
+         "arg2": null,
+         "result": null,
+         "text": "param 55",
+         "line": 24,
+         "column": 7,
+         "index": 9
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t4",
+         "text": "t4 = call grade, 1",
+         "line": 24,
+         "column": 7,
+         "index": 10
+        },
+        {
+         "op": "print",
+         "arg1": "t4",
+         "arg2": null,
+         "result": null,
+         "text": "print t4",
+         "line": 24,
+         "column": 1,
+         "index": 11
+        },
+        {
+         "op": "param",
+         "arg1": "10",
+         "arg2": null,
+         "result": null,
+         "text": "param 10",
+         "line": 25,
+         "column": 7,
+         "index": 12
+        },
+        {
+         "op": "call",
+         "arg1": "grade",
+         "arg2": "1",
+         "result": "t5",
+         "text": "t5 = call grade, 1",
+         "line": 25,
+         "column": 7,
+         "index": 13
+        },
+        {
+         "op": "print",
+         "arg1": "t5",
+         "arg2": null,
+         "result": null,
+         "text": "print t5",
+         "line": 25,
+         "column": 1,
+         "index": 14
+        },
+        {
+         "op": "copy",
+         "arg1": "20",
+         "arg2": null,
+         "result": "age",
+         "text": "age = 20",
+         "line": 27,
+         "column": 1,
+         "index": 15
+        },
+        {
+         "op": "copy",
+         "arg1": "true",
+         "arg2": null,
+         "result": "hasId",
+         "text": "hasId = true",
+         "line": 28,
+         "column": 1,
+         "index": 16
+        },
+        {
+         "op": "print",
+         "arg1": "\"Entry allowed\"",
+         "arg2": null,
+         "result": null,
+         "text": "print \"Entry allowed\"",
+         "line": 30,
+         "column": 5,
+         "index": 17
+        },
+        {
+         "op": "print",
+         "arg1": "\"Not a senior\"",
+         "arg2": null,
+         "result": null,
+         "text": "print \"Not a senior\"",
+         "line": 33,
+         "column": 5,
+         "index": 18
+        }
+       ]
+      },
+      {
+       "name": "grade",
+       "params": [
+        "score"
+       ],
+       "kind": "function",
+       "instructions": [
+        {
+         "op": ">=",
+         "arg1": "score",
+         "arg2": "90",
+         "result": "t1",
+         "text": "t1 = score >= 90",
+         "line": 3,
+         "column": 15,
+         "index": 0
+        },
+        {
+         "op": "if_false",
+         "arg1": "t1",
+         "arg2": null,
+         "result": "L7",
+         "text": "ifFalse t1 goto L7",
+         "line": 3,
+         "column": 5,
+         "index": 1
+        },
+        {
+         "op": "return",
+         "arg1": "\"A\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"A\"",
+         "line": 4,
+         "column": 9,
+         "index": 2
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L7",
+         "text": "L7:",
+         "line": 0,
+         "column": 0,
+         "index": 3
+        },
+        {
+         "op": ">=",
+         "arg1": "score",
+         "arg2": "75",
+         "result": "t2",
+         "text": "t2 = score >= 75",
+         "line": 5,
+         "column": 22,
+         "index": 4
+        },
+        {
+         "op": "if_false",
+         "arg1": "t2",
+         "arg2": null,
+         "result": "L9",
+         "text": "ifFalse t2 goto L9",
+         "line": 5,
+         "column": 12,
+         "index": 5
+        },
+        {
+         "op": "return",
+         "arg1": "\"B\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"B\"",
+         "line": 6,
+         "column": 9,
+         "index": 6
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L9",
+         "text": "L9:",
+         "line": 0,
+         "column": 0,
+         "index": 7
+        },
+        {
+         "op": ">=",
+         "arg1": "score",
+         "arg2": "50",
+         "result": "t3",
+         "text": "t3 = score >= 50",
+         "line": 7,
+         "column": 22,
+         "index": 8
+        },
+        {
+         "op": "if_false",
+         "arg1": "t3",
+         "arg2": null,
+         "result": "L11",
+         "text": "ifFalse t3 goto L11",
+         "line": 7,
+         "column": 12,
+         "index": 9
+        },
+        {
+         "op": "return",
+         "arg1": "\"C\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"C\"",
+         "line": 8,
+         "column": 9,
+         "index": 10
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L11",
+         "text": "L11:",
+         "line": 0,
+         "column": 0,
+         "index": 11
+        },
+        {
+         "op": "return",
+         "arg1": "\"F\"",
+         "arg2": null,
+         "result": null,
+         "text": "return \"F\"",
+         "line": 10,
+         "column": 9,
+         "index": 12
+        }
+       ]
+      }
+     ],
+     "globals": [
+      "x",
+      "y",
+      "age",
+      "hasId"
+     ],
+     "listing": "main:\n    x = 10\n    y = 20\n    print \"x is smaller\"\n    param 95\n    t2 = call grade, 1\n    print t2\n    param 80\n    t3 = call grade, 1\n    print t3\n    param 55\n    t4 = call grade, 1\n    print t4\n    param 10\n    t5 = call grade, 1\n    print t5\n    age = 20\n    hasId = true\n    print \"Entry allowed\"\n    print \"Not a senior\"\n\nfunction grade(score):\n    t1 = score >= 90\n    ifFalse t1 goto L7\n    return \"A\"\nL7:\n    t2 = score >= 75\n    ifFalse t2 goto L9\n    return \"B\"\nL9:\n    t3 = score >= 50\n    ifFalse t3 goto L11\n    return \"C\"\nL11:\n    return \"F\""
+    },
+    "changes": [
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 16,
+      "before": "t1 = x < y",
+      "after": "t1 = 10 < y",
+      "description": "'x' is always 10 at this point"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 16,
+      "before": "t1 = 10 < y",
+      "after": "t1 = 10 < 20",
+      "description": "'y' is always 20 at this point"
+     },
+     {
+      "pass": "constant folding",
+      "function": "main",
+      "line": 16,
+      "before": "t1 = 10 < 20",
+      "after": "t1 = true",
+      "description": "both operands are constants, so it is computed at compile time"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 16,
+      "before": "ifFalse t1 goto L1",
+      "after": "ifFalse true goto L1",
+      "description": "'t1' is always true at this point"
+     },
+     {
+      "pass": "branch folding",
+      "function": "main",
+      "line": 16,
+      "before": "ifFalse true goto L1",
+      "after": null,
+      "description": "the jump is never taken, so it is removed"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 29,
+      "before": "t7 = age >= 18",
+      "after": "t7 = 20 >= 18",
+      "description": "'age' is always 20 at this point"
+     },
+     {
+      "pass": "constant folding",
+      "function": "main",
+      "line": 29,
+      "before": "t7 = 20 >= 18",
+      "after": "t7 = true",
+      "description": "both operands are constants, so it is computed at compile time"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 29,
+      "before": "t6 = t7",
+      "after": "t6 = true",
+      "description": "'t7' is always true at this point"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 29,
+      "before": "ifFalse t6 goto L3",
+      "after": "ifFalse true goto L3",
+      "description": "'t6' is always true at this point"
+     },
+     {
+      "pass": "branch folding",
+      "function": "main",
+      "line": 29,
+      "before": "ifFalse true goto L3",
+      "after": null,
+      "description": "the jump is never taken, so it is removed"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 29,
+      "before": "t6 = hasId",
+      "after": "t6 = true",
+      "description": "'hasId' is always true at this point"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 29,
+      "before": "ifFalse t6 goto L4",
+      "after": "ifFalse true goto L4",
+      "description": "'t6' is always true at this point"
+     },
+     {
+      "pass": "branch folding",
+      "function": "main",
+      "line": 29,
+      "before": "ifFalse true goto L4",
+      "after": null,
+      "description": "the jump is never taken, so it is removed"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 32,
+      "before": "t9 = age > 60",
+      "after": "t9 = 20 > 60",
+      "description": "'age' is always 20 at this point"
+     },
+     {
+      "pass": "constant folding",
+      "function": "main",
+      "line": 32,
+      "before": "t9 = 20 > 60",
+      "after": "t9 = false",
+      "description": "both operands are constants, so it is computed at compile time"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 32,
+      "before": "t10 = !t9",
+      "after": "t10 = !false",
+      "description": "'t9' is always false at this point"
+     },
+     {
+      "pass": "constant folding",
+      "function": "main",
+      "line": 32,
+      "before": "t10 = !false",
+      "after": "t10 = true",
+      "description": "both operands are constants, so it is computed at compile time"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 32,
+      "before": "t8 = t10",
+      "after": "t8 = true",
+      "description": "'t10' is always true at this point"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 32,
+      "before": "if t8 goto L5",
+      "after": "if true goto L5",
+      "description": "'t8' is always true at this point"
+     },
+     {
+      "pass": "branch folding",
+      "function": "main",
+      "line": 32,
+      "before": "if true goto L5",
+      "after": "goto L5",
+      "description": "the condition is always true for this jump, so it always jumps"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "main",
+      "line": 0,
+      "before": "L1:",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "main",
+      "line": 19,
+      "before": "print \"x is larger\"",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "main",
+      "line": 32,
+      "before": "t8 = false",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 16,
+      "before": "t1 = true",
+      "after": null,
+      "description": "'t1' is never read afterwards"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 32,
+      "before": "t10 = true",
+      "after": null,
+      "description": "'t10' is never read afterwards"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 32,
+      "before": "t9 = false",
+      "after": null,
+      "description": "'t9' is never read afterwards"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 29,
+      "before": "t6 = true",
+      "after": null,
+      "description": "'t6' is never read afterwards"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 29,
+      "before": "t6 = true",
+      "after": null,
+      "description": "'t6' is never read afterwards"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 29,
+      "before": "t7 = true",
+      "after": null,
+      "description": "'t7' is never read afterwards"
+     },
+     {
+      "pass": "jump cleanup",
+      "function": "main",
+      "line": 16,
+      "before": "goto L2",
+      "after": null,
+      "description": "it jumps to the instruction that follows anyway"
+     },
+     {
+      "pass": "jump cleanup",
+      "function": "main",
+      "line": 32,
+      "before": "goto L5",
+      "after": null,
+      "description": "it jumps to the instruction that follows anyway"
+     },
+     {
+      "pass": "jump cleanup",
+      "function": "main",
+      "line": 0,
+      "before": "L2:",
+      "after": null,
+      "description": "no jump leads here"
+     },
+     {
+      "pass": "jump cleanup",
+      "function": "main",
+      "line": 0,
+      "before": "L3:",
+      "after": null,
+      "description": "no jump leads here"
+     },
+     {
+      "pass": "jump cleanup",
+      "function": "main",
+      "line": 0,
+      "before": "L4:",
+      "after": null,
+      "description": "no jump leads here"
+     },
+     {
+      "pass": "jump cleanup",
+      "function": "main",
+      "line": 0,
+      "before": "L5:",
+      "after": null,
+      "description": "no jump leads here"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "grade",
+      "line": 3,
+      "before": "goto L8",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "grade",
+      "line": 5,
+      "before": "goto L10",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "grade",
+      "line": 7,
+      "before": "goto L12",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "grade",
+      "line": 0,
+      "before": "L12:",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "grade",
+      "line": 0,
+      "before": "L10:",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "grade",
+      "line": 0,
+      "before": "L8:",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "unreachable code",
+      "function": "grade",
+      "line": 2,
+      "before": "return nil",
+      "after": null,
+      "description": "no path from the start of the function reaches it"
+     },
+     {
+      "pass": "constant propagation",
+      "function": "main",
+      "line": 32,
+      "before": "ifFalse t8 goto L6",
+      "after": "ifFalse true goto L6",
+      "description": "'t8' is always true at this point"
+     },
+     {
+      "pass": "branch folding",
+      "function": "main",
+      "line": 32,
+      "before": "ifFalse true goto L6",
+      "after": null,
+      "description": "the jump is never taken, so it is removed"
+     },
+     {
+      "pass": "dead store removal",
+      "function": "main",
+      "line": 32,
+      "before": "t8 = true",
+      "after": null,
+      "description": "'t8' is never read afterwards"
+     },
+     {
+      "pass": "jump cleanup",
+      "function": "main",
+      "line": 0,
+      "before": "L6:",
+      "after": null,
+      "description": "no jump leads here"
+     }
+    ],
+    "stats": {
+     "constant propagation": 13,
+     "constant folding": 4,
+     "branch folding": 5,
+     "unreachable code": 10,
+     "dead store removal": 7,
+     "jump cleanup": 7
+    },
+    "instruction_counts": {
+     "before": 60,
+     "after": 32
+    }
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_cfg",
+   "name": "Optimized CFG",
+   "status": "ok",
+   "summary": "8 basic blocks",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B1"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 18,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "copy",
+          "arg1": "10",
+          "arg2": null,
+          "result": "x",
+          "text": "x = 10",
+          "line": 14,
+          "column": 1,
+          "index": 0
+         },
+         {
+          "op": "copy",
+          "arg1": "20",
+          "arg2": null,
+          "result": "y",
+          "text": "y = 20",
+          "line": 15,
+          "column": 1,
+          "index": 1
+         },
+         {
+          "op": "print",
+          "arg1": "\"x is smaller\"",
+          "arg2": null,
+          "result": null,
+          "text": "print \"x is smaller\"",
+          "line": 17,
+          "column": 5,
+          "index": 2
+         },
+         {
+          "op": "param",
+          "arg1": "95",
+          "arg2": null,
+          "result": null,
+          "text": "param 95",
+          "line": 22,
+          "column": 7,
+          "index": 3
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t2",
+          "text": "t2 = call grade, 1",
+          "line": 22,
+          "column": 7,
+          "index": 4
+         },
+         {
+          "op": "print",
+          "arg1": "t2",
+          "arg2": null,
+          "result": null,
+          "text": "print t2",
+          "line": 22,
+          "column": 1,
+          "index": 5
+         },
+         {
+          "op": "param",
+          "arg1": "80",
+          "arg2": null,
+          "result": null,
+          "text": "param 80",
+          "line": 23,
+          "column": 7,
+          "index": 6
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t3",
+          "text": "t3 = call grade, 1",
+          "line": 23,
+          "column": 7,
+          "index": 7
+         },
+         {
+          "op": "print",
+          "arg1": "t3",
+          "arg2": null,
+          "result": null,
+          "text": "print t3",
+          "line": 23,
+          "column": 1,
+          "index": 8
+         },
+         {
+          "op": "param",
+          "arg1": "55",
+          "arg2": null,
+          "result": null,
+          "text": "param 55",
+          "line": 24,
+          "column": 7,
+          "index": 9
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t4",
+          "text": "t4 = call grade, 1",
+          "line": 24,
+          "column": 7,
+          "index": 10
+         },
+         {
+          "op": "print",
+          "arg1": "t4",
+          "arg2": null,
+          "result": null,
+          "text": "print t4",
+          "line": 24,
+          "column": 1,
+          "index": 11
+         },
+         {
+          "op": "param",
+          "arg1": "10",
+          "arg2": null,
+          "result": null,
+          "text": "param 10",
+          "line": 25,
+          "column": 7,
+          "index": 12
+         },
+         {
+          "op": "call",
+          "arg1": "grade",
+          "arg2": "1",
+          "result": "t5",
+          "text": "t5 = call grade, 1",
+          "line": 25,
+          "column": 7,
+          "index": 13
+         },
+         {
+          "op": "print",
+          "arg1": "t5",
+          "arg2": null,
+          "result": null,
+          "text": "print t5",
+          "line": 25,
+          "column": 1,
+          "index": 14
+         },
+         {
+          "op": "copy",
+          "arg1": "20",
+          "arg2": null,
+          "result": "age",
+          "text": "age = 20",
+          "line": 27,
+          "column": 1,
+          "index": 15
+         },
+         {
+          "op": "copy",
+          "arg1": "true",
+          "arg2": null,
+          "result": "hasId",
+          "text": "hasId = true",
+          "line": 28,
+          "column": 1,
+          "index": 16
+         },
+         {
+          "op": "print",
+          "arg1": "\"Entry allowed\"",
+          "arg2": null,
+          "result": null,
+          "text": "print \"Entry allowed\"",
+          "line": 30,
+          "column": 5,
+          "index": 17
+         },
+         {
+          "op": "print",
+          "arg1": "\"Not a senior\"",
+          "arg2": null,
+          "result": null,
+          "text": "print \"Not a senior\"",
+          "line": 33,
+          "column": 5,
+          "index": 18
+         }
+        ],
+        "successors": [],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": true
+       }
+      ],
+      "edges": []
+     },
+     {
+      "function": "grade",
+      "entry": "B1",
+      "exits": [
+       "B2",
+       "B4",
+       "B6",
+       "B7"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "grade",
+        "start": 0,
+        "end": 1,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": ">=",
+          "arg1": "score",
+          "arg2": "90",
+          "result": "t1",
+          "text": "t1 = score >= 90",
+          "line": 3,
+          "column": 15,
+          "index": 0
+         },
+         {
+          "op": "if_false",
+          "arg1": "t1",
+          "arg2": null,
+          "result": "L7",
+          "text": "ifFalse t1 goto L7",
+          "line": 3,
+          "column": 5,
+          "index": 1
+         }
+        ],
+        "successors": [
+         "B2",
+         "B3"
+        ],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": false
+       },
+       {
+        "id": 2,
+        "name": "B2",
+        "function": "grade",
+        "start": 2,
+        "end": 2,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "return",
+          "arg1": "\"A\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"A\"",
+          "line": 4,
+          "column": 9,
+          "index": 2
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B1"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       },
+       {
+        "id": 3,
+        "name": "B3",
+        "function": "grade",
+        "start": 3,
+        "end": 5,
+        "label": "L7",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a return"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L7",
+          "text": "L7:",
+          "line": 0,
+          "column": 0,
+          "index": 3
+         },
+         {
+          "op": ">=",
+          "arg1": "score",
+          "arg2": "75",
+          "result": "t2",
+          "text": "t2 = score >= 75",
+          "line": 5,
+          "column": 22,
+          "index": 4
+         },
+         {
+          "op": "if_false",
+          "arg1": "t2",
+          "arg2": null,
+          "result": "L9",
+          "text": "ifFalse t2 goto L9",
+          "line": 5,
+          "column": 12,
+          "index": 5
+         }
+        ],
+        "successors": [
+         "B4",
+         "B5"
+        ],
+        "predecessors": [
+         "B1"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 4,
+        "name": "B4",
+        "function": "grade",
+        "start": 6,
+        "end": 6,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "return",
+          "arg1": "\"B\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"B\"",
+          "line": 6,
+          "column": 9,
+          "index": 6
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B3"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       },
+       {
+        "id": 5,
+        "name": "B5",
+        "function": "grade",
+        "start": 7,
+        "end": 9,
+        "label": "L9",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a return"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L9",
+          "text": "L9:",
+          "line": 0,
+          "column": 0,
+          "index": 7
+         },
+         {
+          "op": ">=",
+          "arg1": "score",
+          "arg2": "50",
+          "result": "t3",
+          "text": "t3 = score >= 50",
+          "line": 7,
+          "column": 22,
+          "index": 8
+         },
+         {
+          "op": "if_false",
+          "arg1": "t3",
+          "arg2": null,
+          "result": "L11",
+          "text": "ifFalse t3 goto L11",
+          "line": 7,
+          "column": 12,
+          "index": 9
+         }
+        ],
+        "successors": [
+         "B6",
+         "B7"
+        ],
+        "predecessors": [
+         "B3"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 6,
+        "name": "B6",
+        "function": "grade",
+        "start": 10,
+        "end": 10,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "return",
+          "arg1": "\"C\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"C\"",
+          "line": 8,
+          "column": 9,
+          "index": 10
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B5"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       },
+       {
+        "id": 7,
+        "name": "B7",
+        "function": "grade",
+        "start": 11,
+        "end": 12,
+        "label": "L11",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a return"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L11",
+          "text": "L11:",
+          "line": 0,
+          "column": 0,
+          "index": 11
+         },
+         {
+          "op": "return",
+          "arg1": "\"F\"",
+          "arg2": null,
+          "result": null,
+          "text": "return \"F\"",
+          "line": 10,
+          "column": 9,
+          "index": 12
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B5"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       }
+      ],
+      "edges": [
+       {
+        "source": "B1",
+        "target": "B2",
+        "kind": "true"
+       },
+       {
+        "source": "B1",
+        "target": "B3",
+        "kind": "false"
+       },
+       {
+        "source": "B3",
+        "target": "B4",
+        "kind": "true"
+       },
+       {
+        "source": "B3",
+        "target": "B5",
+        "kind": "false"
+       },
+       {
+        "source": "B5",
+        "target": "B6",
+        "kind": "true"
+       },
+       {
+        "source": "B5",
+        "target": "B7",
+        "kind": "false"
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "execution",
+   "name": "Execution",
+   "status": "ok",
+   "summary": "39 steps; optimized TAC gives identical output",
+   "data": {
+    "output": "x is smaller\nA\nB\nC\nF\nEntry allowed\nNot a senior\n",
+    "steps": 39,
+    "variables": {
+     "x": "10",
+     "y": "20",
+     "age": "20",
+     "hasId": "true"
+    },
+    "optimized_output": "x is smaller\nA\nB\nC\nF\nEntry allowed\nNot a senior\n",
+    "verified": true
+   },
+   "errors": [],
+   "warnings": []
+  }
+ ],
+ "errors": [],
+ "warnings": []
+}

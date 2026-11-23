@@ -1,0 +1,26 @@
+// A tiny calculator built from functions and operator precedence.
+function add(a, b) { return a + b; }
+function subtract(a, b) { return a - b; }
+function multiply(a, b) { return a * b; }
+function divide(a, b) {
+    if (b == 0) {
+        print("Cannot divide by zero");
+        return nil;
+    }
+    return a / b;
+}
+
+print(add(10, 5));
+print(subtract(10, 5));
+print(multiply(10, 5));
+print(divide(10, 5));
+print(divide(10, 0));
+
+// Precedence: 2 + (3 * 4), not (2 + 3) * 4
+print(2 + 3 * 4);
+print((2 + 3) * 4);
+
+// Integer vs float arithmetic
+print(7 / 2);
+print(7 / 2.0);
+print(17 % 5);

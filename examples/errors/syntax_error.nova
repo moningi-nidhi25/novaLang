@@ -1,0 +1,3 @@
+// The semicolon after the first statement is missing.
+let total = 10
+print(total);

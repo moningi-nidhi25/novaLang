@@ -1,0 +1,4394 @@
+{
+ "ok": true,
+ "failed_stage": null,
+ "source": "// while, for, break and continue.\nlet i = 0;\nwhile (i < 5) {\n    print(i);\n    i = i + 1;\n}\n\nlet sum = 0;\nfor (let k = 1; k <= 10; k = k + 1) {\n    sum = sum + k;\n}\nprint(sum);\n\n// continue skips even numbers, break stops at 7\nfor (let n = 0; n < 20; n = n + 1) {\n    if (n % 2 == 0) { continue; }\n    if (n > 7) { break; }\n    print(n);\n}\n",
+ "stages": [
+  {
+   "id": "source",
+   "name": "Source Code",
+   "status": "ok",
+   "summary": "20 lines, 341 characters",
+   "data": {
+    "text": "// while, for, break and continue.\nlet i = 0;\nwhile (i < 5) {\n    print(i);\n    i = i + 1;\n}\n\nlet sum = 0;\nfor (let k = 1; k <= 10; k = k + 1) {\n    sum = sum + k;\n}\nprint(sum);\n\n// continue skips even numbers, break stops at 7\nfor (let n = 0; n < 20; n = n + 1) {\n    if (n % 2 == 0) { continue; }\n    if (n > 7) { break; }\n    print(n);\n}\n",
+    "lines": 20
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tokens",
+   "name": "Tokens",
+   "status": "ok",
+   "summary": "106 tokens",
+   "data": [
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 2,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "i",
+     "value": null,
+     "line": 2,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 2,
+     "column": 7
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "0",
+     "value": 0,
+     "line": 2,
+     "column": 9
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 2,
+     "column": 10
+    },
+    {
+     "type": "WHILE",
+     "lexeme": "while",
+     "value": null,
+     "line": 3,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 3,
+     "column": 7
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "i",
+     "value": null,
+     "line": 3,
+     "column": 8
+    },
+    {
+     "type": "LT",
+     "lexeme": "<",
+     "value": null,
+     "line": 3,
+     "column": 10
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "5",
+     "value": 5,
+     "line": 3,
+     "column": 12
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 3,
+     "column": 13
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 3,
+     "column": 15
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 4,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 4,
+     "column": 10
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "i",
+     "value": null,
+     "line": 4,
+     "column": 11
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 4,
+     "column": 12
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 4,
+     "column": 13
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "i",
+     "value": null,
+     "line": 5,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 5,
+     "column": 7
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "i",
+     "value": null,
+     "line": 5,
+     "column": 9
+    },
+    {
+     "type": "PLUS",
+     "lexeme": "+",
+     "value": null,
+     "line": 5,
+     "column": 11
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 5,
+     "column": 13
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 5,
+     "column": 14
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 6,
+     "column": 1
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 8,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "sum",
+     "value": null,
+     "line": 8,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 8,
+     "column": 9
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "0",
+     "value": 0,
+     "line": 8,
+     "column": 11
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 8,
+     "column": 12
+    },
+    {
+     "type": "FOR",
+     "lexeme": "for",
+     "value": null,
+     "line": 9,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 9,
+     "column": 5
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 9,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "k",
+     "value": null,
+     "line": 9,
+     "column": 10
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 9,
+     "column": 12
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 9,
+     "column": 14
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 9,
+     "column": 15
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "k",
+     "value": null,
+     "line": 9,
+     "column": 17
+    },
+    {
+     "type": "LTE",
+     "lexeme": "<=",
+     "value": null,
+     "line": 9,
+     "column": 19
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "10",
+     "value": 10,
+     "line": 9,
+     "column": 22
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 9,
+     "column": 24
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "k",
+     "value": null,
+     "line": 9,
+     "column": 26
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 9,
+     "column": 28
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "k",
+     "value": null,
+     "line": 9,
+     "column": 30
+    },
+    {
+     "type": "PLUS",
+     "lexeme": "+",
+     "value": null,
+     "line": 9,
+     "column": 32
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 9,
+     "column": 34
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 9,
+     "column": 35
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 9,
+     "column": 37
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "sum",
+     "value": null,
+     "line": 10,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 10,
+     "column": 9
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "sum",
+     "value": null,
+     "line": 10,
+     "column": 11
+    },
+    {
+     "type": "PLUS",
+     "lexeme": "+",
+     "value": null,
+     "line": 10,
+     "column": 15
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "k",
+     "value": null,
+     "line": 10,
+     "column": 17
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 10,
+     "column": 18
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 11,
+     "column": 1
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 12,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 12,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "sum",
+     "value": null,
+     "line": 12,
+     "column": 7
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 12,
+     "column": 10
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 12,
+     "column": 11
+    },
+    {
+     "type": "FOR",
+     "lexeme": "for",
+     "value": null,
+     "line": 15,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 15,
+     "column": 5
+    },
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 15,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 15,
+     "column": 10
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 15,
+     "column": 12
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "0",
+     "value": 0,
+     "line": 15,
+     "column": 14
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 15,
+     "column": 15
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 15,
+     "column": 17
+    },
+    {
+     "type": "LT",
+     "lexeme": "<",
+     "value": null,
+     "line": 15,
+     "column": 19
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "20",
+     "value": 20,
+     "line": 15,
+     "column": 21
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 15,
+     "column": 23
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 15,
+     "column": 25
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 15,
+     "column": 27
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 15,
+     "column": 29
+    },
+    {
+     "type": "PLUS",
+     "lexeme": "+",
+     "value": null,
+     "line": 15,
+     "column": 31
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 15,
+     "column": 33
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 15,
+     "column": 34
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 15,
+     "column": 36
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 16,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 16,
+     "column": 8
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 16,
+     "column": 9
+    },
+    {
+     "type": "PERCENT",
+     "lexeme": "%",
+     "value": null,
+     "line": 16,
+     "column": 11
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "2",
+     "value": 2,
+     "line": 16,
+     "column": 13
+    },
+    {
+     "type": "EQ",
+     "lexeme": "==",
+     "value": null,
+     "line": 16,
+     "column": 15
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "0",
+     "value": 0,
+     "line": 16,
+     "column": 18
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 16,
+     "column": 19
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 16,
+     "column": 21
+    },
+    {
+     "type": "CONTINUE",
+     "lexeme": "continue",
+     "value": null,
+     "line": 16,
+     "column": 23
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 16,
+     "column": 31
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 16,
+     "column": 33
+    },
+    {
+     "type": "IF",
+     "lexeme": "if",
+     "value": null,
+     "line": 17,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 17,
+     "column": 8
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 17,
+     "column": 9
+    },
+    {
+     "type": "GT",
+     "lexeme": ">",
+     "value": null,
+     "line": 17,
+     "column": 11
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "7",
+     "value": 7,
+     "line": 17,
+     "column": 13
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 17,
+     "column": 14
+    },
+    {
+     "type": "LBRACE",
+     "lexeme": "{",
+     "value": null,
+     "line": 17,
+     "column": 16
+    },
+    {
+     "type": "BREAK",
+     "lexeme": "break",
+     "value": null,
+     "line": 17,
+     "column": 18
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 17,
+     "column": 23
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 17,
+     "column": 25
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 18,
+     "column": 5
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 18,
+     "column": 10
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "n",
+     "value": null,
+     "line": 18,
+     "column": 11
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 18,
+     "column": 12
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 18,
+     "column": 13
+    },
+    {
+     "type": "RBRACE",
+     "lexeme": "}",
+     "value": null,
+     "line": 19,
+     "column": 1
+    },
+    {
+     "type": "EOF",
+     "lexeme": "",
+     "value": null,
+     "line": 20,
+     "column": 1
+    }
+   ],
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "ast",
+   "name": "Abstract Syntax Tree",
+   "status": "ok",
+   "summary": "6 top-level statements",
+   "data": {
+    "type": "Program",
+    "label": "",
+    "line": 2,
+    "column": 1,
+    "body": [
+     {
+      "type": "VariableDeclaration",
+      "label": "i",
+      "line": 2,
+      "column": 1,
+      "name": "i",
+      "initializer": {
+       "type": "Literal",
+       "label": "0",
+       "line": 2,
+       "column": 9,
+       "inferred_type": "int",
+       "value": 0,
+       "literal_type": "int"
+      }
+     },
+     {
+      "type": "WhileStatement",
+      "label": "",
+      "line": 3,
+      "column": 1,
+      "condition": {
+       "type": "BinaryExpression",
+       "label": "<",
+       "line": 3,
+       "column": 10,
+       "inferred_type": "bool",
+       "operator": "<",
+       "left": {
+        "type": "Identifier",
+        "label": "i",
+        "line": 3,
+        "column": 8,
+        "inferred_type": "int",
+        "name": "i"
+       },
+       "right": {
+        "type": "Literal",
+        "label": "5",
+        "line": 3,
+        "column": 12,
+        "inferred_type": "int",
+        "value": 5,
+        "literal_type": "int"
+       }
+      },
+      "body": {
+       "type": "Block",
+       "label": "",
+       "line": 3,
+       "column": 15,
+       "statements": [
+        {
+         "type": "PrintStatement",
+         "label": "",
+         "line": 4,
+         "column": 5,
+         "expression": {
+          "type": "Identifier",
+          "label": "i",
+          "line": 4,
+          "column": 11,
+          "inferred_type": "int",
+          "name": "i"
+         }
+        },
+        {
+         "type": "Assignment",
+         "label": "=",
+         "line": 5,
+         "column": 7,
+         "target": {
+          "type": "Identifier",
+          "label": "i",
+          "line": 5,
+          "column": 5,
+          "inferred_type": "int",
+          "name": "i"
+         },
+         "value": {
+          "type": "BinaryExpression",
+          "label": "+",
+          "line": 5,
+          "column": 11,
+          "inferred_type": "int",
+          "operator": "+",
+          "left": {
+           "type": "Identifier",
+           "label": "i",
+           "line": 5,
+           "column": 9,
+           "inferred_type": "int",
+           "name": "i"
+          },
+          "right": {
+           "type": "Literal",
+           "label": "1",
+           "line": 5,
+           "column": 13,
+           "inferred_type": "int",
+           "value": 1,
+           "literal_type": "int"
+          }
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "VariableDeclaration",
+      "label": "sum",
+      "line": 8,
+      "column": 1,
+      "name": "sum",
+      "initializer": {
+       "type": "Literal",
+       "label": "0",
+       "line": 8,
+       "column": 11,
+       "inferred_type": "int",
+       "value": 0,
+       "literal_type": "int"
+      }
+     },
+     {
+      "type": "ForStatement",
+      "label": "",
+      "line": 9,
+      "column": 1,
+      "init": {
+       "type": "VariableDeclaration",
+       "label": "k",
+       "line": 9,
+       "column": 6,
+       "name": "k",
+       "initializer": {
+        "type": "Literal",
+        "label": "1",
+        "line": 9,
+        "column": 14,
+        "inferred_type": "int",
+        "value": 1,
+        "literal_type": "int"
+       }
+      },
+      "condition": {
+       "type": "BinaryExpression",
+       "label": "<=",
+       "line": 9,
+       "column": 19,
+       "inferred_type": "bool",
+       "operator": "<=",
+       "left": {
+        "type": "Identifier",
+        "label": "k",
+        "line": 9,
+        "column": 17,
+        "inferred_type": "int",
+        "name": "k"
+       },
+       "right": {
+        "type": "Literal",
+        "label": "10",
+        "line": 9,
+        "column": 22,
+        "inferred_type": "int",
+        "value": 10,
+        "literal_type": "int"
+       }
+      },
+      "update": {
+       "type": "Assignment",
+       "label": "=",
+       "line": 9,
+       "column": 28,
+       "target": {
+        "type": "Identifier",
+        "label": "k",
+        "line": 9,
+        "column": 26,
+        "inferred_type": "int",
+        "name": "k"
+       },
+       "value": {
+        "type": "BinaryExpression",
+        "label": "+",
+        "line": 9,
+        "column": 32,
+        "inferred_type": "int",
+        "operator": "+",
+        "left": {
+         "type": "Identifier",
+         "label": "k",
+         "line": 9,
+         "column": 30,
+         "inferred_type": "int",
+         "name": "k"
+        },
+        "right": {
+         "type": "Literal",
+         "label": "1",
+         "line": 9,
+         "column": 34,
+         "inferred_type": "int",
+         "value": 1,
+         "literal_type": "int"
+        }
+       }
+      },
+      "body": {
+       "type": "Block",
+       "label": "",
+       "line": 9,
+       "column": 37,
+       "statements": [
+        {
+         "type": "Assignment",
+         "label": "=",
+         "line": 10,
+         "column": 9,
+         "target": {
+          "type": "Identifier",
+          "label": "sum",
+          "line": 10,
+          "column": 5,
+          "inferred_type": "int",
+          "name": "sum"
+         },
+         "value": {
+          "type": "BinaryExpression",
+          "label": "+",
+          "line": 10,
+          "column": 15,
+          "inferred_type": "int",
+          "operator": "+",
+          "left": {
+           "type": "Identifier",
+           "label": "sum",
+           "line": 10,
+           "column": 11,
+           "inferred_type": "int",
+           "name": "sum"
+          },
+          "right": {
+           "type": "Identifier",
+           "label": "k",
+           "line": 10,
+           "column": 17,
+           "inferred_type": "int",
+           "name": "k"
+          }
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 12,
+      "column": 1,
+      "expression": {
+       "type": "Identifier",
+       "label": "sum",
+       "line": 12,
+       "column": 7,
+       "inferred_type": "int",
+       "name": "sum"
+      }
+     },
+     {
+      "type": "ForStatement",
+      "label": "",
+      "line": 15,
+      "column": 1,
+      "init": {
+       "type": "VariableDeclaration",
+       "label": "n",
+       "line": 15,
+       "column": 6,
+       "name": "n",
+       "initializer": {
+        "type": "Literal",
+        "label": "0",
+        "line": 15,
+        "column": 14,
+        "inferred_type": "int",
+        "value": 0,
+        "literal_type": "int"
+       }
+      },
+      "condition": {
+       "type": "BinaryExpression",
+       "label": "<",
+       "line": 15,
+       "column": 19,
+       "inferred_type": "bool",
+       "operator": "<",
+       "left": {
+        "type": "Identifier",
+        "label": "n",
+        "line": 15,
+        "column": 17,
+        "inferred_type": "int",
+        "name": "n"
+       },
+       "right": {
+        "type": "Literal",
+        "label": "20",
+        "line": 15,
+        "column": 21,
+        "inferred_type": "int",
+        "value": 20,
+        "literal_type": "int"
+       }
+      },
+      "update": {
+       "type": "Assignment",
+       "label": "=",
+       "line": 15,
+       "column": 27,
+       "target": {
+        "type": "Identifier",
+        "label": "n",
+        "line": 15,
+        "column": 25,
+        "inferred_type": "int",
+        "name": "n"
+       },
+       "value": {
+        "type": "BinaryExpression",
+        "label": "+",
+        "line": 15,
+        "column": 31,
+        "inferred_type": "int",
+        "operator": "+",
+        "left": {
+         "type": "Identifier",
+         "label": "n",
+         "line": 15,
+         "column": 29,
+         "inferred_type": "int",
+         "name": "n"
+        },
+        "right": {
+         "type": "Literal",
+         "label": "1",
+         "line": 15,
+         "column": 33,
+         "inferred_type": "int",
+         "value": 1,
+         "literal_type": "int"
+        }
+       }
+      },
+      "body": {
+       "type": "Block",
+       "label": "",
+       "line": 15,
+       "column": 36,
+       "statements": [
+        {
+         "type": "IfStatement",
+         "label": "",
+         "line": 16,
+         "column": 5,
+         "condition": {
+          "type": "BinaryExpression",
+          "label": "==",
+          "line": 16,
+          "column": 15,
+          "inferred_type": "bool",
+          "operator": "==",
+          "left": {
+           "type": "BinaryExpression",
+           "label": "%",
+           "line": 16,
+           "column": 11,
+           "inferred_type": "int",
+           "operator": "%",
+           "left": {
+            "type": "Identifier",
+            "label": "n",
+            "line": 16,
+            "column": 9,
+            "inferred_type": "int",
+            "name": "n"
+           },
+           "right": {
+            "type": "Literal",
+            "label": "2",
+            "line": 16,
+            "column": 13,
+            "inferred_type": "int",
+            "value": 2,
+            "literal_type": "int"
+           }
+          },
+          "right": {
+           "type": "Literal",
+           "label": "0",
+           "line": 16,
+           "column": 18,
+           "inferred_type": "int",
+           "value": 0,
+           "literal_type": "int"
+          }
+         },
+         "then_branch": {
+          "type": "Block",
+          "label": "",
+          "line": 16,
+          "column": 21,
+          "statements": [
+           {
+            "type": "ContinueStatement",
+            "label": "",
+            "line": 16,
+            "column": 23
+           }
+          ]
+         },
+         "else_branch": null
+        },
+        {
+         "type": "IfStatement",
+         "label": "",
+         "line": 17,
+         "column": 5,
+         "condition": {
+          "type": "BinaryExpression",
+          "label": ">",
+          "line": 17,
+          "column": 11,
+          "inferred_type": "bool",
+          "operator": ">",
+          "left": {
+           "type": "Identifier",
+           "label": "n",
+           "line": 17,
+           "column": 9,
+           "inferred_type": "int",
+           "name": "n"
+          },
+          "right": {
+           "type": "Literal",
+           "label": "7",
+           "line": 17,
+           "column": 13,
+           "inferred_type": "int",
+           "value": 7,
+           "literal_type": "int"
+          }
+         },
+         "then_branch": {
+          "type": "Block",
+          "label": "",
+          "line": 17,
+          "column": 16,
+          "statements": [
+           {
+            "type": "BreakStatement",
+            "label": "",
+            "line": 17,
+            "column": 18
+           }
+          ]
+         },
+         "else_branch": null
+        },
+        {
+         "type": "PrintStatement",
+         "label": "",
+         "line": 18,
+         "column": 5,
+         "expression": {
+          "type": "Identifier",
+          "label": "n",
+          "line": 18,
+          "column": 11,
+          "inferred_type": "int",
+          "name": "n"
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "semantic",
+   "name": "Semantic Analysis",
+   "status": "ok",
+   "summary": "0 errors, 0 warnings",
+   "data": {
+    "info": [
+     {
+      "line": 2,
+      "column": 1,
+      "message": "Variable 'i' declared successfully (type: int)."
+     },
+     {
+      "line": 5,
+      "column": 7,
+      "message": "Assignment to 'i' is valid (int -> int)."
+     },
+     {
+      "line": 8,
+      "column": 1,
+      "message": "Variable 'sum' declared successfully (type: int)."
+     },
+     {
+      "line": 9,
+      "column": 6,
+      "message": "Variable 'k' declared successfully (type: int)."
+     },
+     {
+      "line": 9,
+      "column": 28,
+      "message": "Assignment to 'k' is valid (int -> int)."
+     },
+     {
+      "line": 10,
+      "column": 9,
+      "message": "Assignment to 'sum' is valid (int -> int)."
+     },
+     {
+      "line": 15,
+      "column": 6,
+      "message": "Variable 'n' declared successfully (type: int)."
+     },
+     {
+      "line": 15,
+      "column": 27,
+      "message": "Assignment to 'n' is valid (int -> int)."
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "symbol_table",
+   "name": "Symbol Table",
+   "status": "ok",
+   "summary": "scope tree built",
+   "data": {
+    "name": "global",
+    "kind": "global",
+    "level": 0,
+    "symbols": [
+     {
+      "name": "i",
+      "kind": "variable",
+      "type": "int",
+      "line": 2,
+      "column": 1,
+      "scope": "global"
+     },
+     {
+      "name": "sum",
+      "kind": "variable",
+      "type": "int",
+      "line": 8,
+      "column": 1,
+      "scope": "global"
+     }
+    ],
+    "children": [
+     {
+      "name": "block",
+      "kind": "block",
+      "level": 1,
+      "symbols": [],
+      "children": []
+     },
+     {
+      "name": "for",
+      "kind": "for",
+      "level": 1,
+      "symbols": [
+       {
+        "name": "k",
+        "kind": "variable",
+        "type": "int",
+        "line": 9,
+        "column": 6,
+        "scope": "for"
+       }
+      ],
+      "children": [
+       {
+        "name": "block",
+        "kind": "block",
+        "level": 2,
+        "symbols": [],
+        "children": []
+       }
+      ]
+     },
+     {
+      "name": "for",
+      "kind": "for",
+      "level": 1,
+      "symbols": [
+       {
+        "name": "n",
+        "kind": "variable",
+        "type": "int",
+        "line": 15,
+        "column": 6,
+        "scope": "for"
+       }
+      ],
+      "children": [
+       {
+        "name": "block",
+        "kind": "block",
+        "level": 2,
+        "symbols": [],
+        "children": [
+         {
+          "name": "block",
+          "kind": "block",
+          "level": 3,
+          "symbols": [],
+          "children": []
+         },
+         {
+          "name": "block",
+          "kind": "block",
+          "level": 3,
+          "symbols": [],
+          "children": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tac",
+   "name": "Three Address Code",
+   "status": "ok",
+   "summary": "40 instructions in 1 function",
+   "data": {
+    "functions": [
+     {
+      "name": "main",
+      "params": [],
+      "kind": "main",
+      "instructions": [
+       {
+        "op": "copy",
+        "arg1": "0",
+        "arg2": null,
+        "result": "i",
+        "text": "i = 0",
+        "line": 2,
+        "column": 1,
+        "index": 0
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L1",
+        "text": "L1:",
+        "line": 0,
+        "column": 0,
+        "index": 1
+       },
+       {
+        "op": "<",
+        "arg1": "i",
+        "arg2": "5",
+        "result": "t1",
+        "text": "t1 = i < 5",
+        "line": 3,
+        "column": 10,
+        "index": 2
+       },
+       {
+        "op": "if_false",
+        "arg1": "t1",
+        "arg2": null,
+        "result": "L2",
+        "text": "ifFalse t1 goto L2",
+        "line": 3,
+        "column": 1,
+        "index": 3
+       },
+       {
+        "op": "print",
+        "arg1": "i",
+        "arg2": null,
+        "result": null,
+        "text": "print i",
+        "line": 4,
+        "column": 5,
+        "index": 4
+       },
+       {
+        "op": "+",
+        "arg1": "i",
+        "arg2": "1",
+        "result": "t2",
+        "text": "t2 = i + 1",
+        "line": 5,
+        "column": 11,
+        "index": 5
+       },
+       {
+        "op": "copy",
+        "arg1": "t2",
+        "arg2": null,
+        "result": "i",
+        "text": "i = t2",
+        "line": 5,
+        "column": 7,
+        "index": 6
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L1",
+        "text": "goto L1",
+        "line": 3,
+        "column": 1,
+        "index": 7
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L2",
+        "text": "L2:",
+        "line": 0,
+        "column": 0,
+        "index": 8
+       },
+       {
+        "op": "copy",
+        "arg1": "0",
+        "arg2": null,
+        "result": "sum",
+        "text": "sum = 0",
+        "line": 8,
+        "column": 1,
+        "index": 9
+       },
+       {
+        "op": "copy",
+        "arg1": "1",
+        "arg2": null,
+        "result": "k",
+        "text": "k = 1",
+        "line": 9,
+        "column": 6,
+        "index": 10
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L3",
+        "text": "L3:",
+        "line": 0,
+        "column": 0,
+        "index": 11
+       },
+       {
+        "op": "<=",
+        "arg1": "k",
+        "arg2": "10",
+        "result": "t3",
+        "text": "t3 = k <= 10",
+        "line": 9,
+        "column": 19,
+        "index": 12
+       },
+       {
+        "op": "if_false",
+        "arg1": "t3",
+        "arg2": null,
+        "result": "L4",
+        "text": "ifFalse t3 goto L4",
+        "line": 9,
+        "column": 1,
+        "index": 13
+       },
+       {
+        "op": "+",
+        "arg1": "sum",
+        "arg2": "k",
+        "result": "t4",
+        "text": "t4 = sum + k",
+        "line": 10,
+        "column": 15,
+        "index": 14
+       },
+       {
+        "op": "copy",
+        "arg1": "t4",
+        "arg2": null,
+        "result": "sum",
+        "text": "sum = t4",
+        "line": 10,
+        "column": 9,
+        "index": 15
+       },
+       {
+        "op": "+",
+        "arg1": "k",
+        "arg2": "1",
+        "result": "t5",
+        "text": "t5 = k + 1",
+        "line": 9,
+        "column": 32,
+        "index": 16
+       },
+       {
+        "op": "copy",
+        "arg1": "t5",
+        "arg2": null,
+        "result": "k",
+        "text": "k = t5",
+        "line": 9,
+        "column": 28,
+        "index": 17
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L3",
+        "text": "goto L3",
+        "line": 9,
+        "column": 1,
+        "index": 18
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L4",
+        "text": "L4:",
+        "line": 0,
+        "column": 0,
+        "index": 19
+       },
+       {
+        "op": "print",
+        "arg1": "sum",
+        "arg2": null,
+        "result": null,
+        "text": "print sum",
+        "line": 12,
+        "column": 1,
+        "index": 20
+       },
+       {
+        "op": "copy",
+        "arg1": "0",
+        "arg2": null,
+        "result": "n",
+        "text": "n = 0",
+        "line": 15,
+        "column": 6,
+        "index": 21
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L5",
+        "text": "L5:",
+        "line": 0,
+        "column": 0,
+        "index": 22
+       },
+       {
+        "op": "<",
+        "arg1": "n",
+        "arg2": "20",
+        "result": "t6",
+        "text": "t6 = n < 20",
+        "line": 15,
+        "column": 19,
+        "index": 23
+       },
+       {
+        "op": "if_false",
+        "arg1": "t6",
+        "arg2": null,
+        "result": "L6",
+        "text": "ifFalse t6 goto L6",
+        "line": 15,
+        "column": 1,
+        "index": 24
+       },
+       {
+        "op": "%",
+        "arg1": "n",
+        "arg2": "2",
+        "result": "t7",
+        "text": "t7 = n % 2",
+        "line": 16,
+        "column": 11,
+        "index": 25
+       },
+       {
+        "op": "==",
+        "arg1": "t7",
+        "arg2": "0",
+        "result": "t8",
+        "text": "t8 = t7 == 0",
+        "line": 16,
+        "column": 15,
+        "index": 26
+       },
+       {
+        "op": "if_false",
+        "arg1": "t8",
+        "arg2": null,
+        "result": "L7",
+        "text": "ifFalse t8 goto L7",
+        "line": 16,
+        "column": 5,
+        "index": 27
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L8",
+        "text": "goto L8",
+        "line": 16,
+        "column": 23,
+        "index": 28
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L7",
+        "text": "L7:",
+        "line": 0,
+        "column": 0,
+        "index": 29
+       },
+       {
+        "op": ">",
+        "arg1": "n",
+        "arg2": "7",
+        "result": "t9",
+        "text": "t9 = n > 7",
+        "line": 17,
+        "column": 11,
+        "index": 30
+       },
+       {
+        "op": "if_false",
+        "arg1": "t9",
+        "arg2": null,
+        "result": "L9",
+        "text": "ifFalse t9 goto L9",
+        "line": 17,
+        "column": 5,
+        "index": 31
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L6",
+        "text": "goto L6",
+        "line": 17,
+        "column": 18,
+        "index": 32
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L9",
+        "text": "L9:",
+        "line": 0,
+        "column": 0,
+        "index": 33
+       },
+       {
+        "op": "print",
+        "arg1": "n",
+        "arg2": null,
+        "result": null,
+        "text": "print n",
+        "line": 18,
+        "column": 5,
+        "index": 34
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L8",
+        "text": "L8:",
+        "line": 0,
+        "column": 0,
+        "index": 35
+       },
+       {
+        "op": "+",
+        "arg1": "n",
+        "arg2": "1",
+        "result": "t10",
+        "text": "t10 = n + 1",
+        "line": 15,
+        "column": 31,
+        "index": 36
+       },
+       {
+        "op": "copy",
+        "arg1": "t10",
+        "arg2": null,
+        "result": "n",
+        "text": "n = t10",
+        "line": 15,
+        "column": 27,
+        "index": 37
+       },
+       {
+        "op": "goto",
+        "arg1": null,
+        "arg2": null,
+        "result": "L5",
+        "text": "goto L5",
+        "line": 15,
+        "column": 1,
+        "index": 38
+       },
+       {
+        "op": "label",
+        "arg1": null,
+        "arg2": null,
+        "result": "L6",
+        "text": "L6:",
+        "line": 0,
+        "column": 0,
+        "index": 39
+       }
+      ]
+     }
+    ],
+    "globals": [
+     "i",
+     "sum"
+    ],
+    "listing": "main:\n    i = 0\nL1:\n    t1 = i < 5\n    ifFalse t1 goto L2\n    print i\n    t2 = i + 1\n    i = t2\n    goto L1\nL2:\n    sum = 0\n    k = 1\nL3:\n    t3 = k <= 10\n    ifFalse t3 goto L4\n    t4 = sum + k\n    sum = t4\n    t5 = k + 1\n    k = t5\n    goto L3\nL4:\n    print sum\n    n = 0\nL5:\n    t6 = n < 20\n    ifFalse t6 goto L6\n    t7 = n % 2\n    t8 = t7 == 0\n    ifFalse t8 goto L7\n    goto L8\nL7:\n    t9 = n > 7\n    ifFalse t9 goto L9\n    goto L6\nL9:\n    print n\nL8:\n    t10 = n + 1\n    n = t10\n    goto L5\nL6:"
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "cfg",
+   "name": "Basic Blocks & CFG",
+   "status": "ok",
+   "summary": "15 basic blocks",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B15"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 0,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "copy",
+          "arg1": "0",
+          "arg2": null,
+          "result": "i",
+          "text": "i = 0",
+          "line": 2,
+          "column": 1,
+          "index": 0
+         }
+        ],
+        "successors": [
+         "B2"
+        ],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": false
+       },
+       {
+        "id": 2,
+        "name": "B2",
+        "function": "main",
+        "start": 1,
+        "end": 3,
+        "label": "L1",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L1",
+          "text": "L1:",
+          "line": 0,
+          "column": 0,
+          "index": 1
+         },
+         {
+          "op": "<",
+          "arg1": "i",
+          "arg2": "5",
+          "result": "t1",
+          "text": "t1 = i < 5",
+          "line": 3,
+          "column": 10,
+          "index": 2
+         },
+         {
+          "op": "if_false",
+          "arg1": "t1",
+          "arg2": null,
+          "result": "L2",
+          "text": "ifFalse t1 goto L2",
+          "line": 3,
+          "column": 1,
+          "index": 3
+         }
+        ],
+        "successors": [
+         "B3",
+         "B4"
+        ],
+        "predecessors": [
+         "B1",
+         "B3"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 3,
+        "name": "B3",
+        "function": "main",
+        "start": 4,
+        "end": 7,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "print",
+          "arg1": "i",
+          "arg2": null,
+          "result": null,
+          "text": "print i",
+          "line": 4,
+          "column": 5,
+          "index": 4
+         },
+         {
+          "op": "+",
+          "arg1": "i",
+          "arg2": "1",
+          "result": "t2",
+          "text": "t2 = i + 1",
+          "line": 5,
+          "column": 11,
+          "index": 5
+         },
+         {
+          "op": "copy",
+          "arg1": "t2",
+          "arg2": null,
+          "result": "i",
+          "text": "i = t2",
+          "line": 5,
+          "column": 7,
+          "index": 6
+         },
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L1",
+          "text": "goto L1",
+          "line": 3,
+          "column": 1,
+          "index": 7
+         }
+        ],
+        "successors": [
+         "B2"
+        ],
+        "predecessors": [
+         "B2"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 4,
+        "name": "B4",
+        "function": "main",
+        "start": 8,
+        "end": 10,
+        "label": "L2",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L2",
+          "text": "L2:",
+          "line": 0,
+          "column": 0,
+          "index": 8
+         },
+         {
+          "op": "copy",
+          "arg1": "0",
+          "arg2": null,
+          "result": "sum",
+          "text": "sum = 0",
+          "line": 8,
+          "column": 1,
+          "index": 9
+         },
+         {
+          "op": "copy",
+          "arg1": "1",
+          "arg2": null,
+          "result": "k",
+          "text": "k = 1",
+          "line": 9,
+          "column": 6,
+          "index": 10
+         }
+        ],
+        "successors": [
+         "B5"
+        ],
+        "predecessors": [
+         "B2"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 5,
+        "name": "B5",
+        "function": "main",
+        "start": 11,
+        "end": 13,
+        "label": "L3",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L3",
+          "text": "L3:",
+          "line": 0,
+          "column": 0,
+          "index": 11
+         },
+         {
+          "op": "<=",
+          "arg1": "k",
+          "arg2": "10",
+          "result": "t3",
+          "text": "t3 = k <= 10",
+          "line": 9,
+          "column": 19,
+          "index": 12
+         },
+         {
+          "op": "if_false",
+          "arg1": "t3",
+          "arg2": null,
+          "result": "L4",
+          "text": "ifFalse t3 goto L4",
+          "line": 9,
+          "column": 1,
+          "index": 13
+         }
+        ],
+        "successors": [
+         "B6",
+         "B7"
+        ],
+        "predecessors": [
+         "B4",
+         "B6"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 6,
+        "name": "B6",
+        "function": "main",
+        "start": 14,
+        "end": 18,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "+",
+          "arg1": "sum",
+          "arg2": "k",
+          "result": "t4",
+          "text": "t4 = sum + k",
+          "line": 10,
+          "column": 15,
+          "index": 14
+         },
+         {
+          "op": "copy",
+          "arg1": "t4",
+          "arg2": null,
+          "result": "sum",
+          "text": "sum = t4",
+          "line": 10,
+          "column": 9,
+          "index": 15
+         },
+         {
+          "op": "+",
+          "arg1": "k",
+          "arg2": "1",
+          "result": "t5",
+          "text": "t5 = k + 1",
+          "line": 9,
+          "column": 32,
+          "index": 16
+         },
+         {
+          "op": "copy",
+          "arg1": "t5",
+          "arg2": null,
+          "result": "k",
+          "text": "k = t5",
+          "line": 9,
+          "column": 28,
+          "index": 17
+         },
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L3",
+          "text": "goto L3",
+          "line": 9,
+          "column": 1,
+          "index": 18
+         }
+        ],
+        "successors": [
+         "B5"
+        ],
+        "predecessors": [
+         "B5"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 7,
+        "name": "B7",
+        "function": "main",
+        "start": 19,
+        "end": 21,
+        "label": "L4",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L4",
+          "text": "L4:",
+          "line": 0,
+          "column": 0,
+          "index": 19
+         },
+         {
+          "op": "print",
+          "arg1": "sum",
+          "arg2": null,
+          "result": null,
+          "text": "print sum",
+          "line": 12,
+          "column": 1,
+          "index": 20
+         },
+         {
+          "op": "copy",
+          "arg1": "0",
+          "arg2": null,
+          "result": "n",
+          "text": "n = 0",
+          "line": 15,
+          "column": 6,
+          "index": 21
+         }
+        ],
+        "successors": [
+         "B8"
+        ],
+        "predecessors": [
+         "B5"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 8,
+        "name": "B8",
+        "function": "main",
+        "start": 22,
+        "end": 24,
+        "label": "L5",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L5",
+          "text": "L5:",
+          "line": 0,
+          "column": 0,
+          "index": 22
+         },
+         {
+          "op": "<",
+          "arg1": "n",
+          "arg2": "20",
+          "result": "t6",
+          "text": "t6 = n < 20",
+          "line": 15,
+          "column": 19,
+          "index": 23
+         },
+         {
+          "op": "if_false",
+          "arg1": "t6",
+          "arg2": null,
+          "result": "L6",
+          "text": "ifFalse t6 goto L6",
+          "line": 15,
+          "column": 1,
+          "index": 24
+         }
+        ],
+        "successors": [
+         "B9",
+         "B15"
+        ],
+        "predecessors": [
+         "B7",
+         "B14"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 9,
+        "name": "B9",
+        "function": "main",
+        "start": 25,
+        "end": 27,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "%",
+          "arg1": "n",
+          "arg2": "2",
+          "result": "t7",
+          "text": "t7 = n % 2",
+          "line": 16,
+          "column": 11,
+          "index": 25
+         },
+         {
+          "op": "==",
+          "arg1": "t7",
+          "arg2": "0",
+          "result": "t8",
+          "text": "t8 = t7 == 0",
+          "line": 16,
+          "column": 15,
+          "index": 26
+         },
+         {
+          "op": "if_false",
+          "arg1": "t8",
+          "arg2": null,
+          "result": "L7",
+          "text": "ifFalse t8 goto L7",
+          "line": 16,
+          "column": 5,
+          "index": 27
+         }
+        ],
+        "successors": [
+         "B10",
+         "B11"
+        ],
+        "predecessors": [
+         "B8"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 10,
+        "name": "B10",
+        "function": "main",
+        "start": 28,
+        "end": 28,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L8",
+          "text": "goto L8",
+          "line": 16,
+          "column": 23,
+          "index": 28
+         }
+        ],
+        "successors": [
+         "B14"
+        ],
+        "predecessors": [
+         "B9"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 11,
+        "name": "B11",
+        "function": "main",
+        "start": 29,
+        "end": 31,
+        "label": "L7",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L7",
+          "text": "L7:",
+          "line": 0,
+          "column": 0,
+          "index": 29
+         },
+         {
+          "op": ">",
+          "arg1": "n",
+          "arg2": "7",
+          "result": "t9",
+          "text": "t9 = n > 7",
+          "line": 17,
+          "column": 11,
+          "index": 30
+         },
+         {
+          "op": "if_false",
+          "arg1": "t9",
+          "arg2": null,
+          "result": "L9",
+          "text": "ifFalse t9 goto L9",
+          "line": 17,
+          "column": 5,
+          "index": 31
+         }
+        ],
+        "successors": [
+         "B12",
+         "B13"
+        ],
+        "predecessors": [
+         "B9"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 12,
+        "name": "B12",
+        "function": "main",
+        "start": 32,
+        "end": 32,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L6",
+          "text": "goto L6",
+          "line": 17,
+          "column": 18,
+          "index": 32
+         }
+        ],
+        "successors": [
+         "B15"
+        ],
+        "predecessors": [
+         "B11"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 13,
+        "name": "B13",
+        "function": "main",
+        "start": 33,
+        "end": 34,
+        "label": "L9",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L9",
+          "text": "L9:",
+          "line": 0,
+          "column": 0,
+          "index": 33
+         },
+         {
+          "op": "print",
+          "arg1": "n",
+          "arg2": null,
+          "result": null,
+          "text": "print n",
+          "line": 18,
+          "column": 5,
+          "index": 34
+         }
+        ],
+        "successors": [
+         "B14"
+        ],
+        "predecessors": [
+         "B11"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 14,
+        "name": "B14",
+        "function": "main",
+        "start": 35,
+        "end": 38,
+        "label": "L8",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L8",
+          "text": "L8:",
+          "line": 0,
+          "column": 0,
+          "index": 35
+         },
+         {
+          "op": "+",
+          "arg1": "n",
+          "arg2": "1",
+          "result": "t10",
+          "text": "t10 = n + 1",
+          "line": 15,
+          "column": 31,
+          "index": 36
+         },
+         {
+          "op": "copy",
+          "arg1": "t10",
+          "arg2": null,
+          "result": "n",
+          "text": "n = t10",
+          "line": 15,
+          "column": 27,
+          "index": 37
+         },
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L5",
+          "text": "goto L5",
+          "line": 15,
+          "column": 1,
+          "index": 38
+         }
+        ],
+        "successors": [
+         "B8"
+        ],
+        "predecessors": [
+         "B10",
+         "B13"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 15,
+        "name": "B15",
+        "function": "main",
+        "start": 39,
+        "end": 39,
+        "label": "L6",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L6",
+          "text": "L6:",
+          "line": 0,
+          "column": 0,
+          "index": 39
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B8",
+         "B12"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       }
+      ],
+      "edges": [
+       {
+        "source": "B1",
+        "target": "B2",
+        "kind": "next"
+       },
+       {
+        "source": "B2",
+        "target": "B3",
+        "kind": "true"
+       },
+       {
+        "source": "B2",
+        "target": "B4",
+        "kind": "false"
+       },
+       {
+        "source": "B3",
+        "target": "B2",
+        "kind": "jump"
+       },
+       {
+        "source": "B4",
+        "target": "B5",
+        "kind": "next"
+       },
+       {
+        "source": "B5",
+        "target": "B6",
+        "kind": "true"
+       },
+       {
+        "source": "B5",
+        "target": "B7",
+        "kind": "false"
+       },
+       {
+        "source": "B6",
+        "target": "B5",
+        "kind": "jump"
+       },
+       {
+        "source": "B7",
+        "target": "B8",
+        "kind": "next"
+       },
+       {
+        "source": "B8",
+        "target": "B9",
+        "kind": "true"
+       },
+       {
+        "source": "B8",
+        "target": "B15",
+        "kind": "false"
+       },
+       {
+        "source": "B9",
+        "target": "B10",
+        "kind": "true"
+       },
+       {
+        "source": "B9",
+        "target": "B11",
+        "kind": "false"
+       },
+       {
+        "source": "B10",
+        "target": "B14",
+        "kind": "jump"
+       },
+       {
+        "source": "B11",
+        "target": "B12",
+        "kind": "true"
+       },
+       {
+        "source": "B11",
+        "target": "B13",
+        "kind": "false"
+       },
+       {
+        "source": "B12",
+        "target": "B15",
+        "kind": "jump"
+       },
+       {
+        "source": "B13",
+        "target": "B14",
+        "kind": "next"
+       },
+       {
+        "source": "B14",
+        "target": "B8",
+        "kind": "jump"
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_tac",
+   "name": "Optimized TAC",
+   "status": "ok",
+   "summary": "40 -> 36 instructions, 4 changes",
+   "data": {
+    "original": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "copy",
+         "arg1": "0",
+         "arg2": null,
+         "result": "i",
+         "text": "i = 0",
+         "line": 2,
+         "column": 1,
+         "index": 0
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L1",
+         "text": "L1:",
+         "line": 0,
+         "column": 0,
+         "index": 1
+        },
+        {
+         "op": "<",
+         "arg1": "i",
+         "arg2": "5",
+         "result": "t1",
+         "text": "t1 = i < 5",
+         "line": 3,
+         "column": 10,
+         "index": 2
+        },
+        {
+         "op": "if_false",
+         "arg1": "t1",
+         "arg2": null,
+         "result": "L2",
+         "text": "ifFalse t1 goto L2",
+         "line": 3,
+         "column": 1,
+         "index": 3
+        },
+        {
+         "op": "print",
+         "arg1": "i",
+         "arg2": null,
+         "result": null,
+         "text": "print i",
+         "line": 4,
+         "column": 5,
+         "index": 4
+        },
+        {
+         "op": "+",
+         "arg1": "i",
+         "arg2": "1",
+         "result": "t2",
+         "text": "t2 = i + 1",
+         "line": 5,
+         "column": 11,
+         "index": 5
+        },
+        {
+         "op": "copy",
+         "arg1": "t2",
+         "arg2": null,
+         "result": "i",
+         "text": "i = t2",
+         "line": 5,
+         "column": 7,
+         "index": 6
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L1",
+         "text": "goto L1",
+         "line": 3,
+         "column": 1,
+         "index": 7
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L2",
+         "text": "L2:",
+         "line": 0,
+         "column": 0,
+         "index": 8
+        },
+        {
+         "op": "copy",
+         "arg1": "0",
+         "arg2": null,
+         "result": "sum",
+         "text": "sum = 0",
+         "line": 8,
+         "column": 1,
+         "index": 9
+        },
+        {
+         "op": "copy",
+         "arg1": "1",
+         "arg2": null,
+         "result": "k",
+         "text": "k = 1",
+         "line": 9,
+         "column": 6,
+         "index": 10
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L3",
+         "text": "L3:",
+         "line": 0,
+         "column": 0,
+         "index": 11
+        },
+        {
+         "op": "<=",
+         "arg1": "k",
+         "arg2": "10",
+         "result": "t3",
+         "text": "t3 = k <= 10",
+         "line": 9,
+         "column": 19,
+         "index": 12
+        },
+        {
+         "op": "if_false",
+         "arg1": "t3",
+         "arg2": null,
+         "result": "L4",
+         "text": "ifFalse t3 goto L4",
+         "line": 9,
+         "column": 1,
+         "index": 13
+        },
+        {
+         "op": "+",
+         "arg1": "sum",
+         "arg2": "k",
+         "result": "t4",
+         "text": "t4 = sum + k",
+         "line": 10,
+         "column": 15,
+         "index": 14
+        },
+        {
+         "op": "copy",
+         "arg1": "t4",
+         "arg2": null,
+         "result": "sum",
+         "text": "sum = t4",
+         "line": 10,
+         "column": 9,
+         "index": 15
+        },
+        {
+         "op": "+",
+         "arg1": "k",
+         "arg2": "1",
+         "result": "t5",
+         "text": "t5 = k + 1",
+         "line": 9,
+         "column": 32,
+         "index": 16
+        },
+        {
+         "op": "copy",
+         "arg1": "t5",
+         "arg2": null,
+         "result": "k",
+         "text": "k = t5",
+         "line": 9,
+         "column": 28,
+         "index": 17
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L3",
+         "text": "goto L3",
+         "line": 9,
+         "column": 1,
+         "index": 18
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L4",
+         "text": "L4:",
+         "line": 0,
+         "column": 0,
+         "index": 19
+        },
+        {
+         "op": "print",
+         "arg1": "sum",
+         "arg2": null,
+         "result": null,
+         "text": "print sum",
+         "line": 12,
+         "column": 1,
+         "index": 20
+        },
+        {
+         "op": "copy",
+         "arg1": "0",
+         "arg2": null,
+         "result": "n",
+         "text": "n = 0",
+         "line": 15,
+         "column": 6,
+         "index": 21
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L5",
+         "text": "L5:",
+         "line": 0,
+         "column": 0,
+         "index": 22
+        },
+        {
+         "op": "<",
+         "arg1": "n",
+         "arg2": "20",
+         "result": "t6",
+         "text": "t6 = n < 20",
+         "line": 15,
+         "column": 19,
+         "index": 23
+        },
+        {
+         "op": "if_false",
+         "arg1": "t6",
+         "arg2": null,
+         "result": "L6",
+         "text": "ifFalse t6 goto L6",
+         "line": 15,
+         "column": 1,
+         "index": 24
+        },
+        {
+         "op": "%",
+         "arg1": "n",
+         "arg2": "2",
+         "result": "t7",
+         "text": "t7 = n % 2",
+         "line": 16,
+         "column": 11,
+         "index": 25
+        },
+        {
+         "op": "==",
+         "arg1": "t7",
+         "arg2": "0",
+         "result": "t8",
+         "text": "t8 = t7 == 0",
+         "line": 16,
+         "column": 15,
+         "index": 26
+        },
+        {
+         "op": "if_false",
+         "arg1": "t8",
+         "arg2": null,
+         "result": "L7",
+         "text": "ifFalse t8 goto L7",
+         "line": 16,
+         "column": 5,
+         "index": 27
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L8",
+         "text": "goto L8",
+         "line": 16,
+         "column": 23,
+         "index": 28
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L7",
+         "text": "L7:",
+         "line": 0,
+         "column": 0,
+         "index": 29
+        },
+        {
+         "op": ">",
+         "arg1": "n",
+         "arg2": "7",
+         "result": "t9",
+         "text": "t9 = n > 7",
+         "line": 17,
+         "column": 11,
+         "index": 30
+        },
+        {
+         "op": "if_false",
+         "arg1": "t9",
+         "arg2": null,
+         "result": "L9",
+         "text": "ifFalse t9 goto L9",
+         "line": 17,
+         "column": 5,
+         "index": 31
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L6",
+         "text": "goto L6",
+         "line": 17,
+         "column": 18,
+         "index": 32
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L9",
+         "text": "L9:",
+         "line": 0,
+         "column": 0,
+         "index": 33
+        },
+        {
+         "op": "print",
+         "arg1": "n",
+         "arg2": null,
+         "result": null,
+         "text": "print n",
+         "line": 18,
+         "column": 5,
+         "index": 34
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L8",
+         "text": "L8:",
+         "line": 0,
+         "column": 0,
+         "index": 35
+        },
+        {
+         "op": "+",
+         "arg1": "n",
+         "arg2": "1",
+         "result": "t10",
+         "text": "t10 = n + 1",
+         "line": 15,
+         "column": 31,
+         "index": 36
+        },
+        {
+         "op": "copy",
+         "arg1": "t10",
+         "arg2": null,
+         "result": "n",
+         "text": "n = t10",
+         "line": 15,
+         "column": 27,
+         "index": 37
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L5",
+         "text": "goto L5",
+         "line": 15,
+         "column": 1,
+         "index": 38
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L6",
+         "text": "L6:",
+         "line": 0,
+         "column": 0,
+         "index": 39
+        }
+       ]
+      }
+     ],
+     "globals": [
+      "i",
+      "sum"
+     ],
+     "listing": "main:\n    i = 0\nL1:\n    t1 = i < 5\n    ifFalse t1 goto L2\n    print i\n    t2 = i + 1\n    i = t2\n    goto L1\nL2:\n    sum = 0\n    k = 1\nL3:\n    t3 = k <= 10\n    ifFalse t3 goto L4\n    t4 = sum + k\n    sum = t4\n    t5 = k + 1\n    k = t5\n    goto L3\nL4:\n    print sum\n    n = 0\nL5:\n    t6 = n < 20\n    ifFalse t6 goto L6\n    t7 = n % 2\n    t8 = t7 == 0\n    ifFalse t8 goto L7\n    goto L8\nL7:\n    t9 = n > 7\n    ifFalse t9 goto L9\n    goto L6\nL9:\n    print n\nL8:\n    t10 = n + 1\n    n = t10\n    goto L5\nL6:"
+    },
+    "optimized": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "copy",
+         "arg1": "0",
+         "arg2": null,
+         "result": "i",
+         "text": "i = 0",
+         "line": 2,
+         "column": 1,
+         "index": 0
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L1",
+         "text": "L1:",
+         "line": 0,
+         "column": 0,
+         "index": 1
+        },
+        {
+         "op": "<",
+         "arg1": "i",
+         "arg2": "5",
+         "result": "t1",
+         "text": "t1 = i < 5",
+         "line": 3,
+         "column": 10,
+         "index": 2
+        },
+        {
+         "op": "if_false",
+         "arg1": "t1",
+         "arg2": null,
+         "result": "L2",
+         "text": "ifFalse t1 goto L2",
+         "line": 3,
+         "column": 1,
+         "index": 3
+        },
+        {
+         "op": "print",
+         "arg1": "i",
+         "arg2": null,
+         "result": null,
+         "text": "print i",
+         "line": 4,
+         "column": 5,
+         "index": 4
+        },
+        {
+         "op": "+",
+         "arg1": "i",
+         "arg2": "1",
+         "result": "i",
+         "text": "i = i + 1",
+         "line": 5,
+         "column": 11,
+         "index": 5
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L1",
+         "text": "goto L1",
+         "line": 3,
+         "column": 1,
+         "index": 6
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L2",
+         "text": "L2:",
+         "line": 0,
+         "column": 0,
+         "index": 7
+        },
+        {
+         "op": "copy",
+         "arg1": "0",
+         "arg2": null,
+         "result": "sum",
+         "text": "sum = 0",
+         "line": 8,
+         "column": 1,
+         "index": 8
+        },
+        {
+         "op": "copy",
+         "arg1": "1",
+         "arg2": null,
+         "result": "k",
+         "text": "k = 1",
+         "line": 9,
+         "column": 6,
+         "index": 9
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L3",
+         "text": "L3:",
+         "line": 0,
+         "column": 0,
+         "index": 10
+        },
+        {
+         "op": "<=",
+         "arg1": "k",
+         "arg2": "10",
+         "result": "t3",
+         "text": "t3 = k <= 10",
+         "line": 9,
+         "column": 19,
+         "index": 11
+        },
+        {
+         "op": "if_false",
+         "arg1": "t3",
+         "arg2": null,
+         "result": "L4",
+         "text": "ifFalse t3 goto L4",
+         "line": 9,
+         "column": 1,
+         "index": 12
+        },
+        {
+         "op": "+",
+         "arg1": "sum",
+         "arg2": "k",
+         "result": "sum",
+         "text": "sum = sum + k",
+         "line": 10,
+         "column": 15,
+         "index": 13
+        },
+        {
+         "op": "+",
+         "arg1": "k",
+         "arg2": "1",
+         "result": "k",
+         "text": "k = k + 1",
+         "line": 9,
+         "column": 32,
+         "index": 14
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L3",
+         "text": "goto L3",
+         "line": 9,
+         "column": 1,
+         "index": 15
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L4",
+         "text": "L4:",
+         "line": 0,
+         "column": 0,
+         "index": 16
+        },
+        {
+         "op": "print",
+         "arg1": "sum",
+         "arg2": null,
+         "result": null,
+         "text": "print sum",
+         "line": 12,
+         "column": 1,
+         "index": 17
+        },
+        {
+         "op": "copy",
+         "arg1": "0",
+         "arg2": null,
+         "result": "n",
+         "text": "n = 0",
+         "line": 15,
+         "column": 6,
+         "index": 18
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L5",
+         "text": "L5:",
+         "line": 0,
+         "column": 0,
+         "index": 19
+        },
+        {
+         "op": "<",
+         "arg1": "n",
+         "arg2": "20",
+         "result": "t6",
+         "text": "t6 = n < 20",
+         "line": 15,
+         "column": 19,
+         "index": 20
+        },
+        {
+         "op": "if_false",
+         "arg1": "t6",
+         "arg2": null,
+         "result": "L6",
+         "text": "ifFalse t6 goto L6",
+         "line": 15,
+         "column": 1,
+         "index": 21
+        },
+        {
+         "op": "%",
+         "arg1": "n",
+         "arg2": "2",
+         "result": "t7",
+         "text": "t7 = n % 2",
+         "line": 16,
+         "column": 11,
+         "index": 22
+        },
+        {
+         "op": "==",
+         "arg1": "t7",
+         "arg2": "0",
+         "result": "t8",
+         "text": "t8 = t7 == 0",
+         "line": 16,
+         "column": 15,
+         "index": 23
+        },
+        {
+         "op": "if_false",
+         "arg1": "t8",
+         "arg2": null,
+         "result": "L7",
+         "text": "ifFalse t8 goto L7",
+         "line": 16,
+         "column": 5,
+         "index": 24
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L8",
+         "text": "goto L8",
+         "line": 16,
+         "column": 23,
+         "index": 25
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L7",
+         "text": "L7:",
+         "line": 0,
+         "column": 0,
+         "index": 26
+        },
+        {
+         "op": ">",
+         "arg1": "n",
+         "arg2": "7",
+         "result": "t9",
+         "text": "t9 = n > 7",
+         "line": 17,
+         "column": 11,
+         "index": 27
+        },
+        {
+         "op": "if_false",
+         "arg1": "t9",
+         "arg2": null,
+         "result": "L9",
+         "text": "ifFalse t9 goto L9",
+         "line": 17,
+         "column": 5,
+         "index": 28
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L6",
+         "text": "goto L6",
+         "line": 17,
+         "column": 18,
+         "index": 29
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L9",
+         "text": "L9:",
+         "line": 0,
+         "column": 0,
+         "index": 30
+        },
+        {
+         "op": "print",
+         "arg1": "n",
+         "arg2": null,
+         "result": null,
+         "text": "print n",
+         "line": 18,
+         "column": 5,
+         "index": 31
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L8",
+         "text": "L8:",
+         "line": 0,
+         "column": 0,
+         "index": 32
+        },
+        {
+         "op": "+",
+         "arg1": "n",
+         "arg2": "1",
+         "result": "n",
+         "text": "n = n + 1",
+         "line": 15,
+         "column": 31,
+         "index": 33
+        },
+        {
+         "op": "goto",
+         "arg1": null,
+         "arg2": null,
+         "result": "L5",
+         "text": "goto L5",
+         "line": 15,
+         "column": 1,
+         "index": 34
+        },
+        {
+         "op": "label",
+         "arg1": null,
+         "arg2": null,
+         "result": "L6",
+         "text": "L6:",
+         "line": 0,
+         "column": 0,
+         "index": 35
+        }
+       ]
+      }
+     ],
+     "globals": [
+      "i",
+      "sum"
+     ],
+     "listing": "main:\n    i = 0\nL1:\n    t1 = i < 5\n    ifFalse t1 goto L2\n    print i\n    i = i + 1\n    goto L1\nL2:\n    sum = 0\n    k = 1\nL3:\n    t3 = k <= 10\n    ifFalse t3 goto L4\n    sum = sum + k\n    k = k + 1\n    goto L3\nL4:\n    print sum\n    n = 0\nL5:\n    t6 = n < 20\n    ifFalse t6 goto L6\n    t7 = n % 2\n    t8 = t7 == 0\n    ifFalse t8 goto L7\n    goto L8\nL7:\n    t9 = n > 7\n    ifFalse t9 goto L9\n    goto L6\nL9:\n    print n\nL8:\n    n = n + 1\n    goto L5\nL6:"
+    },
+    "changes": [
+     {
+      "pass": "temporary coalescing",
+      "function": "main",
+      "line": 5,
+      "before": "t2 = i + 1",
+      "after": "i = i + 1",
+      "description": "'t2' was only a stepping stone to 'i'"
+     },
+     {
+      "pass": "temporary coalescing",
+      "function": "main",
+      "line": 10,
+      "before": "t4 = sum + k",
+      "after": "sum = sum + k",
+      "description": "'t4' was only a stepping stone to 'sum'"
+     },
+     {
+      "pass": "temporary coalescing",
+      "function": "main",
+      "line": 9,
+      "before": "t5 = k + 1",
+      "after": "k = k + 1",
+      "description": "'t5' was only a stepping stone to 'k'"
+     },
+     {
+      "pass": "temporary coalescing",
+      "function": "main",
+      "line": 15,
+      "before": "t10 = n + 1",
+      "after": "n = n + 1",
+      "description": "'t10' was only a stepping stone to 'n'"
+     }
+    ],
+    "stats": {
+     "temporary coalescing": 4
+    },
+    "instruction_counts": {
+     "before": 40,
+     "after": 36
+    }
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_cfg",
+   "name": "Optimized CFG",
+   "status": "ok",
+   "summary": "15 basic blocks",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B15"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 0,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "copy",
+          "arg1": "0",
+          "arg2": null,
+          "result": "i",
+          "text": "i = 0",
+          "line": 2,
+          "column": 1,
+          "index": 0
+         }
+        ],
+        "successors": [
+         "B2"
+        ],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": false
+       },
+       {
+        "id": 2,
+        "name": "B2",
+        "function": "main",
+        "start": 1,
+        "end": 3,
+        "label": "L1",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L1",
+          "text": "L1:",
+          "line": 0,
+          "column": 0,
+          "index": 1
+         },
+         {
+          "op": "<",
+          "arg1": "i",
+          "arg2": "5",
+          "result": "t1",
+          "text": "t1 = i < 5",
+          "line": 3,
+          "column": 10,
+          "index": 2
+         },
+         {
+          "op": "if_false",
+          "arg1": "t1",
+          "arg2": null,
+          "result": "L2",
+          "text": "ifFalse t1 goto L2",
+          "line": 3,
+          "column": 1,
+          "index": 3
+         }
+        ],
+        "successors": [
+         "B3",
+         "B4"
+        ],
+        "predecessors": [
+         "B1",
+         "B3"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 3,
+        "name": "B3",
+        "function": "main",
+        "start": 4,
+        "end": 6,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "print",
+          "arg1": "i",
+          "arg2": null,
+          "result": null,
+          "text": "print i",
+          "line": 4,
+          "column": 5,
+          "index": 4
+         },
+         {
+          "op": "+",
+          "arg1": "i",
+          "arg2": "1",
+          "result": "i",
+          "text": "i = i + 1",
+          "line": 5,
+          "column": 11,
+          "index": 5
+         },
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L1",
+          "text": "goto L1",
+          "line": 3,
+          "column": 1,
+          "index": 6
+         }
+        ],
+        "successors": [
+         "B2"
+        ],
+        "predecessors": [
+         "B2"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 4,
+        "name": "B4",
+        "function": "main",
+        "start": 7,
+        "end": 9,
+        "label": "L2",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L2",
+          "text": "L2:",
+          "line": 0,
+          "column": 0,
+          "index": 7
+         },
+         {
+          "op": "copy",
+          "arg1": "0",
+          "arg2": null,
+          "result": "sum",
+          "text": "sum = 0",
+          "line": 8,
+          "column": 1,
+          "index": 8
+         },
+         {
+          "op": "copy",
+          "arg1": "1",
+          "arg2": null,
+          "result": "k",
+          "text": "k = 1",
+          "line": 9,
+          "column": 6,
+          "index": 9
+         }
+        ],
+        "successors": [
+         "B5"
+        ],
+        "predecessors": [
+         "B2"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 5,
+        "name": "B5",
+        "function": "main",
+        "start": 10,
+        "end": 12,
+        "label": "L3",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L3",
+          "text": "L3:",
+          "line": 0,
+          "column": 0,
+          "index": 10
+         },
+         {
+          "op": "<=",
+          "arg1": "k",
+          "arg2": "10",
+          "result": "t3",
+          "text": "t3 = k <= 10",
+          "line": 9,
+          "column": 19,
+          "index": 11
+         },
+         {
+          "op": "if_false",
+          "arg1": "t3",
+          "arg2": null,
+          "result": "L4",
+          "text": "ifFalse t3 goto L4",
+          "line": 9,
+          "column": 1,
+          "index": 12
+         }
+        ],
+        "successors": [
+         "B6",
+         "B7"
+        ],
+        "predecessors": [
+         "B4",
+         "B6"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 6,
+        "name": "B6",
+        "function": "main",
+        "start": 13,
+        "end": 15,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "+",
+          "arg1": "sum",
+          "arg2": "k",
+          "result": "sum",
+          "text": "sum = sum + k",
+          "line": 10,
+          "column": 15,
+          "index": 13
+         },
+         {
+          "op": "+",
+          "arg1": "k",
+          "arg2": "1",
+          "result": "k",
+          "text": "k = k + 1",
+          "line": 9,
+          "column": 32,
+          "index": 14
+         },
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L3",
+          "text": "goto L3",
+          "line": 9,
+          "column": 1,
+          "index": 15
+         }
+        ],
+        "successors": [
+         "B5"
+        ],
+        "predecessors": [
+         "B5"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 7,
+        "name": "B7",
+        "function": "main",
+        "start": 16,
+        "end": 18,
+        "label": "L4",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L4",
+          "text": "L4:",
+          "line": 0,
+          "column": 0,
+          "index": 16
+         },
+         {
+          "op": "print",
+          "arg1": "sum",
+          "arg2": null,
+          "result": null,
+          "text": "print sum",
+          "line": 12,
+          "column": 1,
+          "index": 17
+         },
+         {
+          "op": "copy",
+          "arg1": "0",
+          "arg2": null,
+          "result": "n",
+          "text": "n = 0",
+          "line": 15,
+          "column": 6,
+          "index": 18
+         }
+        ],
+        "successors": [
+         "B8"
+        ],
+        "predecessors": [
+         "B5"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 8,
+        "name": "B8",
+        "function": "main",
+        "start": 19,
+        "end": 21,
+        "label": "L5",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L5",
+          "text": "L5:",
+          "line": 0,
+          "column": 0,
+          "index": 19
+         },
+         {
+          "op": "<",
+          "arg1": "n",
+          "arg2": "20",
+          "result": "t6",
+          "text": "t6 = n < 20",
+          "line": 15,
+          "column": 19,
+          "index": 20
+         },
+         {
+          "op": "if_false",
+          "arg1": "t6",
+          "arg2": null,
+          "result": "L6",
+          "text": "ifFalse t6 goto L6",
+          "line": 15,
+          "column": 1,
+          "index": 21
+         }
+        ],
+        "successors": [
+         "B9",
+         "B15"
+        ],
+        "predecessors": [
+         "B7",
+         "B14"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 9,
+        "name": "B9",
+        "function": "main",
+        "start": 22,
+        "end": 24,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "%",
+          "arg1": "n",
+          "arg2": "2",
+          "result": "t7",
+          "text": "t7 = n % 2",
+          "line": 16,
+          "column": 11,
+          "index": 22
+         },
+         {
+          "op": "==",
+          "arg1": "t7",
+          "arg2": "0",
+          "result": "t8",
+          "text": "t8 = t7 == 0",
+          "line": 16,
+          "column": 15,
+          "index": 23
+         },
+         {
+          "op": "if_false",
+          "arg1": "t8",
+          "arg2": null,
+          "result": "L7",
+          "text": "ifFalse t8 goto L7",
+          "line": 16,
+          "column": 5,
+          "index": 24
+         }
+        ],
+        "successors": [
+         "B10",
+         "B11"
+        ],
+        "predecessors": [
+         "B8"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 10,
+        "name": "B10",
+        "function": "main",
+        "start": 25,
+        "end": 25,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L8",
+          "text": "goto L8",
+          "line": 16,
+          "column": 23,
+          "index": 25
+         }
+        ],
+        "successors": [
+         "B14"
+        ],
+        "predecessors": [
+         "B9"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 11,
+        "name": "B11",
+        "function": "main",
+        "start": 26,
+        "end": 28,
+        "label": "L7",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L7",
+          "text": "L7:",
+          "line": 0,
+          "column": 0,
+          "index": 26
+         },
+         {
+          "op": ">",
+          "arg1": "n",
+          "arg2": "7",
+          "result": "t9",
+          "text": "t9 = n > 7",
+          "line": 17,
+          "column": 11,
+          "index": 27
+         },
+         {
+          "op": "if_false",
+          "arg1": "t9",
+          "arg2": null,
+          "result": "L9",
+          "text": "ifFalse t9 goto L9",
+          "line": 17,
+          "column": 5,
+          "index": 28
+         }
+        ],
+        "successors": [
+         "B12",
+         "B13"
+        ],
+        "predecessors": [
+         "B9"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 12,
+        "name": "B12",
+        "function": "main",
+        "start": 29,
+        "end": 29,
+        "label": null,
+        "leader_reasons": [
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L6",
+          "text": "goto L6",
+          "line": 17,
+          "column": 18,
+          "index": 29
+         }
+        ],
+        "successors": [
+         "B15"
+        ],
+        "predecessors": [
+         "B11"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 13,
+        "name": "B13",
+        "function": "main",
+        "start": 30,
+        "end": 31,
+        "label": "L9",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L9",
+          "text": "L9:",
+          "line": 0,
+          "column": 0,
+          "index": 30
+         },
+         {
+          "op": "print",
+          "arg1": "n",
+          "arg2": null,
+          "result": null,
+          "text": "print n",
+          "line": 18,
+          "column": 5,
+          "index": 31
+         }
+        ],
+        "successors": [
+         "B14"
+        ],
+        "predecessors": [
+         "B11"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 14,
+        "name": "B14",
+        "function": "main",
+        "start": 32,
+        "end": 34,
+        "label": "L8",
+        "leader_reasons": [
+         "target of a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L8",
+          "text": "L8:",
+          "line": 0,
+          "column": 0,
+          "index": 32
+         },
+         {
+          "op": "+",
+          "arg1": "n",
+          "arg2": "1",
+          "result": "n",
+          "text": "n = n + 1",
+          "line": 15,
+          "column": 31,
+          "index": 33
+         },
+         {
+          "op": "goto",
+          "arg1": null,
+          "arg2": null,
+          "result": "L5",
+          "text": "goto L5",
+          "line": 15,
+          "column": 1,
+          "index": 34
+         }
+        ],
+        "successors": [
+         "B8"
+        ],
+        "predecessors": [
+         "B10",
+         "B13"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": false
+       },
+       {
+        "id": 15,
+        "name": "B15",
+        "function": "main",
+        "start": 35,
+        "end": 35,
+        "label": "L6",
+        "leader_reasons": [
+         "target of a jump",
+         "follows a jump"
+        ],
+        "instructions": [
+         {
+          "op": "label",
+          "arg1": null,
+          "arg2": null,
+          "result": "L6",
+          "text": "L6:",
+          "line": 0,
+          "column": 0,
+          "index": 35
+         }
+        ],
+        "successors": [],
+        "predecessors": [
+         "B8",
+         "B12"
+        ],
+        "reachable": true,
+        "is_entry": false,
+        "is_exit": true
+       }
+      ],
+      "edges": [
+       {
+        "source": "B1",
+        "target": "B2",
+        "kind": "next"
+       },
+       {
+        "source": "B2",
+        "target": "B3",
+        "kind": "true"
+       },
+       {
+        "source": "B2",
+        "target": "B4",
+        "kind": "false"
+       },
+       {
+        "source": "B3",
+        "target": "B2",
+        "kind": "jump"
+       },
+       {
+        "source": "B4",
+        "target": "B5",
+        "kind": "next"
+       },
+       {
+        "source": "B5",
+        "target": "B6",
+        "kind": "true"
+       },
+       {
+        "source": "B5",
+        "target": "B7",
+        "kind": "false"
+       },
+       {
+        "source": "B6",
+        "target": "B5",
+        "kind": "jump"
+       },
+       {
+        "source": "B7",
+        "target": "B8",
+        "kind": "next"
+       },
+       {
+        "source": "B8",
+        "target": "B9",
+        "kind": "true"
+       },
+       {
+        "source": "B8",
+        "target": "B15",
+        "kind": "false"
+       },
+       {
+        "source": "B9",
+        "target": "B10",
+        "kind": "true"
+       },
+       {
+        "source": "B9",
+        "target": "B11",
+        "kind": "false"
+       },
+       {
+        "source": "B10",
+        "target": "B14",
+        "kind": "jump"
+       },
+       {
+        "source": "B11",
+        "target": "B12",
+        "kind": "true"
+       },
+       {
+        "source": "B11",
+        "target": "B13",
+        "kind": "false"
+       },
+       {
+        "source": "B12",
+        "target": "B15",
+        "kind": "jump"
+       },
+       {
+        "source": "B13",
+        "target": "B14",
+        "kind": "next"
+       },
+       {
+        "source": "B14",
+        "target": "B8",
+        "kind": "jump"
+       }
+      ]
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "execution",
+   "name": "Execution",
+   "status": "ok",
+   "summary": "103 steps; optimized TAC gives identical output",
+   "data": {
+    "output": "0\n1\n2\n3\n4\n55\n1\n3\n5\n7\n",
+    "steps": 103,
+    "variables": {
+     "i": "5",
+     "sum": "55"
+    },
+    "optimized_output": "0\n1\n2\n3\n4\n55\n1\n3\n5\n7\n",
+    "verified": true
+   },
+   "errors": [],
+   "warnings": []
+  }
+ ],
+ "errors": [],
+ "warnings": []
+}

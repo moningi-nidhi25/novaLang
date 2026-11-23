@@ -1,0 +1,190 @@
+{
+ "ok": false,
+ "failed_stage": "semantic",
+ "source": "print(zzz);",
+ "stages": [
+  {
+   "id": "source",
+   "name": "Source Code",
+   "status": "ok",
+   "summary": "1 line, 11 characters",
+   "data": {
+    "text": "print(zzz);",
+    "lines": 1
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tokens",
+   "name": "Tokens",
+   "status": "ok",
+   "summary": "6 tokens",
+   "data": [
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 1,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 1,
+     "column": 6
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "zzz",
+     "value": null,
+     "line": 1,
+     "column": 7
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 1,
+     "column": 10
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 1,
+     "column": 11
+    },
+    {
+     "type": "EOF",
+     "lexeme": "",
+     "value": null,
+     "line": 1,
+     "column": 12
+    }
+   ],
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "ast",
+   "name": "Abstract Syntax Tree",
+   "status": "ok",
+   "summary": "1 top-level statement",
+   "data": {
+    "type": "Program",
+    "label": "",
+    "line": 1,
+    "column": 1,
+    "body": [
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 1,
+      "column": 1,
+      "expression": {
+       "type": "Identifier",
+       "label": "zzz",
+       "line": 1,
+       "column": 7,
+       "inferred_type": "any",
+       "name": "zzz"
+      }
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "semantic",
+   "name": "Semantic Analysis",
+   "status": "error",
+   "summary": "1 error, 0 warnings",
+   "data": {
+    "info": []
+   },
+   "errors": [
+    {
+     "phase": "Semantic Error",
+     "message": "Variable 'zzz' is not defined.",
+     "line": 1,
+     "column": 7,
+     "hint": "Declare it before use with: let zzz = ...; (and check the spelling and the scope it was declared in)."
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "id": "symbol_table",
+   "name": "Symbol Table",
+   "status": "ok",
+   "summary": "scope tree built",
+   "data": {
+    "name": "global",
+    "kind": "global",
+    "level": 0,
+    "symbols": [],
+    "children": []
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tac",
+   "name": "Three Address Code",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "cfg",
+   "name": "Basic Blocks & CFG",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_tac",
+   "name": "Optimized TAC",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_cfg",
+   "name": "Optimized CFG",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "execution",
+   "name": "Execution",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  }
+ ],
+ "errors": [
+  {
+   "phase": "Semantic Error",
+   "message": "Variable 'zzz' is not defined.",
+   "line": 1,
+   "column": 7,
+   "hint": "Declare it before use with: let zzz = ...; (and check the spelling and the scope it was declared in)."
+  }
+ ],
+ "warnings": []
+}

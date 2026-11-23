@@ -1,0 +1,154 @@
+{
+ "ok": false,
+ "failed_stage": "ast",
+ "source": "let x = ;",
+ "stages": [
+  {
+   "id": "source",
+   "name": "Source Code",
+   "status": "ok",
+   "summary": "1 line, 9 characters",
+   "data": {
+    "text": "let x = ;",
+    "lines": 1
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tokens",
+   "name": "Tokens",
+   "status": "ok",
+   "summary": "5 tokens",
+   "data": [
+    {
+     "type": "LET",
+     "lexeme": "let",
+     "value": null,
+     "line": 1,
+     "column": 1
+    },
+    {
+     "type": "IDENTIFIER",
+     "lexeme": "x",
+     "value": null,
+     "line": 1,
+     "column": 5
+    },
+    {
+     "type": "ASSIGN",
+     "lexeme": "=",
+     "value": null,
+     "line": 1,
+     "column": 7
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 1,
+     "column": 9
+    },
+    {
+     "type": "EOF",
+     "lexeme": "",
+     "value": null,
+     "line": 1,
+     "column": 10
+    }
+   ],
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "ast",
+   "name": "Abstract Syntax Tree",
+   "status": "error",
+   "summary": "1 syntax error",
+   "data": null,
+   "errors": [
+    {
+     "phase": "Syntax Error",
+     "message": "Expected expression.",
+     "line": 1,
+     "column": 9,
+     "hint": "An expression is a number, string, true/false/nil, a variable, a call, '(' ... ')' or an array like [1, 2]. Found ';' instead."
+    }
+   ],
+   "warnings": []
+  },
+  {
+   "id": "semantic",
+   "name": "Semantic Analysis",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "symbol_table",
+   "name": "Symbol Table",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tac",
+   "name": "Three Address Code",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "cfg",
+   "name": "Basic Blocks & CFG",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_tac",
+   "name": "Optimized TAC",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_cfg",
+   "name": "Optimized CFG",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "execution",
+   "name": "Execution",
+   "status": "skipped",
+   "summary": "",
+   "data": null,
+   "errors": [],
+   "warnings": []
+  }
+ ],
+ "errors": [
+  {
+   "phase": "Syntax Error",
+   "message": "Expected expression.",
+   "line": 1,
+   "column": 9,
+   "hint": "An expression is a number, string, true/false/nil, a variable, a call, '(' ... ')' or an array like [1, 2]. Found ';' instead."
+  }
+ ],
+ "warnings": []
+}

@@ -1,0 +1,551 @@
+{
+ "ok": false,
+ "failed_stage": "execution",
+ "source": "print(1);\nprint(1 / 0);",
+ "stages": [
+  {
+   "id": "source",
+   "name": "Source Code",
+   "status": "ok",
+   "summary": "2 lines, 23 characters",
+   "data": {
+    "text": "print(1);\nprint(1 / 0);",
+    "lines": 2
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tokens",
+   "name": "Tokens",
+   "status": "ok",
+   "summary": "13 tokens",
+   "data": [
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 1,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 1,
+     "column": 6
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 1,
+     "column": 7
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 1,
+     "column": 8
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 1,
+     "column": 9
+    },
+    {
+     "type": "PRINT",
+     "lexeme": "print",
+     "value": null,
+     "line": 2,
+     "column": 1
+    },
+    {
+     "type": "LPAREN",
+     "lexeme": "(",
+     "value": null,
+     "line": 2,
+     "column": 6
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "1",
+     "value": 1,
+     "line": 2,
+     "column": 7
+    },
+    {
+     "type": "SLASH",
+     "lexeme": "/",
+     "value": null,
+     "line": 2,
+     "column": 9
+    },
+    {
+     "type": "INTEGER",
+     "lexeme": "0",
+     "value": 0,
+     "line": 2,
+     "column": 11
+    },
+    {
+     "type": "RPAREN",
+     "lexeme": ")",
+     "value": null,
+     "line": 2,
+     "column": 12
+    },
+    {
+     "type": "SEMICOLON",
+     "lexeme": ";",
+     "value": null,
+     "line": 2,
+     "column": 13
+    },
+    {
+     "type": "EOF",
+     "lexeme": "",
+     "value": null,
+     "line": 2,
+     "column": 14
+    }
+   ],
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "ast",
+   "name": "Abstract Syntax Tree",
+   "status": "ok",
+   "summary": "2 top-level statements",
+   "data": {
+    "type": "Program",
+    "label": "",
+    "line": 1,
+    "column": 1,
+    "body": [
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 1,
+      "column": 1,
+      "expression": {
+       "type": "Literal",
+       "label": "1",
+       "line": 1,
+       "column": 7,
+       "inferred_type": "int",
+       "value": 1,
+       "literal_type": "int"
+      }
+     },
+     {
+      "type": "PrintStatement",
+      "label": "",
+      "line": 2,
+      "column": 1,
+      "expression": {
+       "type": "BinaryExpression",
+       "label": "/",
+       "line": 2,
+       "column": 9,
+       "inferred_type": "int",
+       "operator": "/",
+       "left": {
+        "type": "Literal",
+        "label": "1",
+        "line": 2,
+        "column": 7,
+        "inferred_type": "int",
+        "value": 1,
+        "literal_type": "int"
+       },
+       "right": {
+        "type": "Literal",
+        "label": "0",
+        "line": 2,
+        "column": 11,
+        "inferred_type": "int",
+        "value": 0,
+        "literal_type": "int"
+       }
+      }
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "semantic",
+   "name": "Semantic Analysis",
+   "status": "warning",
+   "summary": "0 errors, 1 warning",
+   "data": {
+    "info": []
+   },
+   "errors": [],
+   "warnings": [
+    {
+     "phase": "Semantic Warning",
+     "message": "Division by zero: the right operand is the constant 0.",
+     "line": 2,
+     "column": 9,
+     "hint": "The program is still valid, but it will fail at run time when this runs."
+    }
+   ]
+  },
+  {
+   "id": "symbol_table",
+   "name": "Symbol Table",
+   "status": "ok",
+   "summary": "scope tree built",
+   "data": {
+    "name": "global",
+    "kind": "global",
+    "level": 0,
+    "symbols": [],
+    "children": []
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "tac",
+   "name": "Three Address Code",
+   "status": "ok",
+   "summary": "3 instructions in 1 function",
+   "data": {
+    "functions": [
+     {
+      "name": "main",
+      "params": [],
+      "kind": "main",
+      "instructions": [
+       {
+        "op": "print",
+        "arg1": "1",
+        "arg2": null,
+        "result": null,
+        "text": "print 1",
+        "line": 1,
+        "column": 1,
+        "index": 0
+       },
+       {
+        "op": "/",
+        "arg1": "1",
+        "arg2": "0",
+        "result": "t1",
+        "text": "t1 = 1 / 0",
+        "line": 2,
+        "column": 9,
+        "index": 1
+       },
+       {
+        "op": "print",
+        "arg1": "t1",
+        "arg2": null,
+        "result": null,
+        "text": "print t1",
+        "line": 2,
+        "column": 1,
+        "index": 2
+       }
+      ]
+     }
+    ],
+    "globals": [],
+    "listing": "main:\n    print 1\n    t1 = 1 / 0\n    print t1"
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "cfg",
+   "name": "Basic Blocks & CFG",
+   "status": "ok",
+   "summary": "1 basic block",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B1"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 2,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "print",
+          "arg1": "1",
+          "arg2": null,
+          "result": null,
+          "text": "print 1",
+          "line": 1,
+          "column": 1,
+          "index": 0
+         },
+         {
+          "op": "/",
+          "arg1": "1",
+          "arg2": "0",
+          "result": "t1",
+          "text": "t1 = 1 / 0",
+          "line": 2,
+          "column": 9,
+          "index": 1
+         },
+         {
+          "op": "print",
+          "arg1": "t1",
+          "arg2": null,
+          "result": null,
+          "text": "print t1",
+          "line": 2,
+          "column": 1,
+          "index": 2
+         }
+        ],
+        "successors": [],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": true
+       }
+      ],
+      "edges": []
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_tac",
+   "name": "Optimized TAC",
+   "status": "ok",
+   "summary": "3 -> 3 instructions, 0 changes",
+   "data": {
+    "original": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "print",
+         "arg1": "1",
+         "arg2": null,
+         "result": null,
+         "text": "print 1",
+         "line": 1,
+         "column": 1,
+         "index": 0
+        },
+        {
+         "op": "/",
+         "arg1": "1",
+         "arg2": "0",
+         "result": "t1",
+         "text": "t1 = 1 / 0",
+         "line": 2,
+         "column": 9,
+         "index": 1
+        },
+        {
+         "op": "print",
+         "arg1": "t1",
+         "arg2": null,
+         "result": null,
+         "text": "print t1",
+         "line": 2,
+         "column": 1,
+         "index": 2
+        }
+       ]
+      }
+     ],
+     "globals": [],
+     "listing": "main:\n    print 1\n    t1 = 1 / 0\n    print t1"
+    },
+    "optimized": {
+     "functions": [
+      {
+       "name": "main",
+       "params": [],
+       "kind": "main",
+       "instructions": [
+        {
+         "op": "print",
+         "arg1": "1",
+         "arg2": null,
+         "result": null,
+         "text": "print 1",
+         "line": 1,
+         "column": 1,
+         "index": 0
+        },
+        {
+         "op": "/",
+         "arg1": "1",
+         "arg2": "0",
+         "result": "t1",
+         "text": "t1 = 1 / 0",
+         "line": 2,
+         "column": 9,
+         "index": 1
+        },
+        {
+         "op": "print",
+         "arg1": "t1",
+         "arg2": null,
+         "result": null,
+         "text": "print t1",
+         "line": 2,
+         "column": 1,
+         "index": 2
+        }
+       ]
+      }
+     ],
+     "globals": [],
+     "listing": "main:\n    print 1\n    t1 = 1 / 0\n    print t1"
+    },
+    "changes": [],
+    "stats": {},
+    "instruction_counts": {
+     "before": 3,
+     "after": 3
+    }
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "optimized_cfg",
+   "name": "Optimized CFG",
+   "status": "ok",
+   "summary": "1 basic block",
+   "data": {
+    "functions": [
+     {
+      "function": "main",
+      "entry": "B1",
+      "exits": [
+       "B1"
+      ],
+      "blocks": [
+       {
+        "id": 1,
+        "name": "B1",
+        "function": "main",
+        "start": 0,
+        "end": 2,
+        "label": null,
+        "leader_reasons": [
+         "first instruction"
+        ],
+        "instructions": [
+         {
+          "op": "print",
+          "arg1": "1",
+          "arg2": null,
+          "result": null,
+          "text": "print 1",
+          "line": 1,
+          "column": 1,
+          "index": 0
+         },
+         {
+          "op": "/",
+          "arg1": "1",
+          "arg2": "0",
+          "result": "t1",
+          "text": "t1 = 1 / 0",
+          "line": 2,
+          "column": 9,
+          "index": 1
+         },
+         {
+          "op": "print",
+          "arg1": "t1",
+          "arg2": null,
+          "result": null,
+          "text": "print t1",
+          "line": 2,
+          "column": 1,
+          "index": 2
+         }
+        ],
+        "successors": [],
+        "predecessors": [],
+        "reachable": true,
+        "is_entry": true,
+        "is_exit": true
+       }
+      ],
+      "edges": []
+     }
+    ]
+   },
+   "errors": [],
+   "warnings": []
+  },
+  {
+   "id": "execution",
+   "name": "Execution",
+   "status": "error",
+   "summary": "stopped by a run-time error",
+   "data": {
+    "output": "1\n",
+    "steps": 2,
+    "variables": {},
+    "optimized_output": "1\n",
+    "verified": true
+   },
+   "errors": [
+    {
+     "phase": "Runtime Error",
+     "message": "Division by zero at line 2.",
+     "line": 2,
+     "column": 9,
+     "hint": "The right-hand operand evaluated to 0; check it before dividing."
+    }
+   ],
+   "warnings": []
+  }
+ ],
+ "errors": [
+  {
+   "phase": "Runtime Error",
+   "message": "Division by zero at line 2.",
+   "line": 2,
+   "column": 9,
+   "hint": "The right-hand operand evaluated to 0; check it before dividing."
+  }
+ ],
+ "warnings": [
+  {
+   "phase": "Semantic Warning",
+   "message": "Division by zero: the right operand is the constant 0.",
+   "line": 2,
+   "column": 9,
+   "hint": "The program is still valid, but it will fail at run time when this runs."
+  }
+ ]
+}

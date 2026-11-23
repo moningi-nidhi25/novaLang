@@ -1,0 +1,7 @@
+// Compiles cleanly; fails only when it runs, after printing two lines.
+let scores = [90, 85, 70];
+let position = 3;
+print(scores[0]);
+print(scores[2]);
+print(scores[position]);
+print("never reached");

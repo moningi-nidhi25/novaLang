@@ -1,0 +1,4 @@
+// The lexer meets a character NovaLang does not have.
+let price = 5;
+let tax = price # 2;
+print(tax);
